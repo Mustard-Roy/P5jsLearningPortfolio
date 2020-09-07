@@ -85,162 +85,467 @@
       
       <blockquote>
 
-function setup() {
-  createCanvas(400, 400);
-  background(50, 50, 50);//28
-  angleMode(DEGREES);
-  rectMode(CENTER);
-}
+<div class=WordSection1 style='layout-grid:15.6pt'>
 
-//modified by the star function from p5.js reference
-function star(x, y, radius1, radius2) {
-  var angle = 360 / 5;
-  var halfAngle = angle / 2;
-  beginShape();
-  for (var a = 0; a < 360; a += angle) {
-    var sx = x + cos(a) * radius2;
-    var sy = y + sin(a) * radius2;
-    vertex(sx, sy);
-    sx = x + cos(a + halfAngle) * radius1;
-    sy = y + sin(a + halfAngle) * radius1;
-    vertex(sx, sy);
-  }
-  endShape(CLOSE);
-}
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
 
-function draw_card(degree) {
-  push();
-  rotate(degree);
-  stroke(0, 150);
-  strokeWeight(0.2);
-  fill(245);
-  rect(0, 2, 40, 30);
-  fill(220, 20, 60);
-  noStroke();
-  star(0, 2, 5, 10);
-  pop();
-}
+<p class=MsoNormal><span lang=EN-US>function <span class=GramE>setup(</span>) {<o:p></o:p></span></p>
 
-function draw() {
-  translate(width/2, height/2);
-  
-  //draw the drawer
-  push();
-  
-  stroke(135, 206, 235);
-  strokeWeight(3.5);
-  fill(100, 191, 255);
-  rect(0, 0, 150, 50);
-  
-  noStroke();
-  fill('#317b8c');
-  rect(0, 25, 160, 5);
-  
-  pop();
-  
-  //draw the CARDS
-  draw_card(5);
-  draw_card(8);
-  draw_card(-3);
-  draw_card(-10);
-  
-  //draw the top layer
-  /* total layer */
-  push();
-  
-  stroke(135, 206, 255);
-  strokeWeight(5);
-  fill(20, 191, 255);
-  rect(0, -50, 160, 60);
-  
-  pop();
-  
-  /* compartments */
-  push();
-  
-  translate(-width/2, -height/2);
-  rectMode(CORNER);
-  
-  stroke(135, 206, 255);
-  strokeWeight(5);
-  fill(0,0);
-  rect(120, 120, 30, 20);
-  rect(150, 120, 30, 20);
-  rect(180, 120, 100, 30);
-  rect(180, 150, 100, 30);
-  
-  /* eraser */
-  stroke(0, 150);
-  strokeWeight(0.2);
-  fill(245);
-  rect(129, 126, 14, 7.5, 1.8, 0, 0, 1.8);
-  noStroke();
-  fill(255, 20, 147, 100);
-  rect(133, 126, 10, 7.5)
-  
-  /* pencil sharpener */
-  noStroke();
-  
-  fill(255, 240, 147);
-  rect(159, 125, 14, 9, 1);
-  fill(150);
-  rect(160, 127, 12, 4);
-  blendMode(LIGHTEST);
-  fill(200);
-  rect(160, 130, 12, 1);
-  blendMode(MULTIPLY);
-  fill(180);
-  circle(166, 129, 3);
-  
-  /* pencil and pen */
-  blendMode(BLEND);
-  fill(170, 40, 100);
-  rect(190, 130, 6, 4, 2);
-  fill(221, 170, 61);
-  rect(195, 130, 70, 4);
-  fill(200);
-  rect(195, 130, 4, 4);
-  fill(185, 152, 111);
-  triangle(265, 130, 265, 134, 272, 132)
-  
-  fill(200);
-  rect(198, 160, 6, 5, 2);
-  fill(50);
-  ellipse(241, 162.5, 40, 7);
-  fill(100);
-  rect(201, 159, 40, 7, 2);
-  fill(200, 100);
-  rect(201, 164, 40, 2);
-  
-  pop(); 
-  
-  /* top layer outline */
-  push();
-  
-  stroke('#317b8c');
-  strokeWeight(3);
-  fill(0,0);
-  rect(0, -50, 168, 65);
-  
-  pop();
-  
-  //draw the lid
-  push();
-  
-  stroke('#317b8c');
-  strokeWeight(3);
-  fill('#7edbff');
-  quad(-84, -85.5, 84, -85.5, 91, -152.1, -91, -152.1);
-  
-  pop();
-  
-  fill(110);
-  textSize(20);
-  text(' The\nLost', -140, 80);
-  textSize(60)
-  text('PenBox', -90, 105);
-  
-}
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>createCanvas</span></span><span class=GramE>(</span>400,
+400);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>background(</span>50, 50, 50);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>angleMode</span></span><span class=GramE>(</span>DEGREES);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>rectMode</span></span><span class=GramE>(</span>CENTER);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>//modified by the star function from p5.js
+reference<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>function <span class=GramE>star(</span>x,
+y, radius1, radius2) {<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>var
+angle = 360 / 5;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>var
+<span class=SpellE>halfAngle</span> = angle / 2;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>beginShape</span></span><span class=GramE>(</span>);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>for
+(var a = 0; a &lt; 360; a += angle) {<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
+</span>var <span class=SpellE>sx</span> = x + cos(a) * radius2;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
+</span>var <span class=SpellE>sy</span> = y + sin(a) * radius2;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><span
+class=GramE>vertex(</span><span class=SpellE>sx</span>, <span class=SpellE>sy</span>);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><span
+class=SpellE>sx</span> = x + <span class=GramE>cos(</span>a + <span
+class=SpellE>halfAngle</span>) * radius1;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><span
+class=SpellE>sy</span> = y + <span class=GramE>sin(</span>a + <span
+class=SpellE>halfAngle</span>) * radius1;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><span
+class=GramE>vertex(</span><span class=SpellE>sx</span>, <span class=SpellE>sy</span>);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>endShape</span></span><span class=GramE>(</span>CLOSE);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>function <span class=SpellE>draw_card</span>(degree)
+{<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>push(</span>);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>rotate(degree);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>stroke(</span>0, 150);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>strokeWeight</span></span><span class=GramE>(</span>0.2);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>fill(</span>245);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>rect</span></span><span class=GramE>(</span>0,
+2, 40, 30);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>fill(</span>220, 20, 60);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>noStroke</span></span><span class=GramE>(</span>);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>star(</span>0, 2, 5, 10);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>pop(</span>);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>function <span class=GramE>draw(</span>) {<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>translate(</span>width/2, height/2);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>//draw the drawer<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>push(</span>);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>stroke(</span>135, 206, 235);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>strokeWeight</span></span><span class=GramE>(</span>3.5);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>fill(</span>100, 191, 255);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>rect</span></span><span class=GramE>(</span>0,
+0, 150, 50);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>noStroke</span></span><span class=GramE>(</span>);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>fill('#317b8c');<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>rect</span></span><span class=GramE>(</span>0,
+25, 160, 5);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>pop(</span>);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>//draw the CARDS<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>draw_<span class=GramE>card</span></span><span class=GramE>(</span>5);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>draw_<span class=GramE>card</span></span><span class=GramE>(</span>8);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>draw_<span class=GramE>card</span></span><span class=GramE>(</span>-3);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>draw_<span class=GramE>card</span></span><span class=GramE>(</span>-10);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>//draw the top layer<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>/*
+total layer */<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>push(</span>);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>stroke(</span>135, 206, 255);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>strokeWeight</span></span><span class=GramE>(</span>5);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>fill(</span>20, 191, 255);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>rect</span></span><span class=GramE>(</span>0,
+-50, 160, 60);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>pop(</span>);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>/*
+compartments */<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>push(</span>);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>translate(</span>-width/2, -height/2);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>rectMode</span></span><span class=GramE>(</span>CORNER);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>stroke(</span>135, 206, 255);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>strokeWeight</span></span><span class=GramE>(</span>5);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>fill(</span>0,0);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>rect</span></span><span class=GramE>(</span>120,
+120, 30, 20);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>rect</span></span><span class=GramE>(</span>150,
+120, 30, 20);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>rect</span></span><span class=GramE>(</span>180,
+120, 100, 30);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>rect</span></span><span class=GramE>(</span>180,
+150, 100, 30);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>/*
+eraser */<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>stroke(</span>0, 150);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>strokeWeight</span></span><span class=GramE>(</span>0.2);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>fill(</span>245);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>rect</span></span><span class=GramE>(</span>129,
+126, 14, 7.5, 1.8, 0, 0, 1.8);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>noStroke</span></span><span class=GramE>(</span>);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>fill(</span>255, 20, 147, 100);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>rect</span></span><span class=GramE>(</span>133,
+126, 10, 7.5)<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>/*
+pencil sharpener */<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>noStroke</span></span><span class=GramE>(</span>);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>fill(</span>255, 240, 147);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>rect</span></span><span class=GramE>(</span>159,
+125, 14, 9, 1);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>fill(</span>150);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>rect</span></span><span class=GramE>(</span>160,
+127, 12, 4);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>blendMode</span></span><span class=GramE>(</span>LIGHTEST);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>fill(</span>200);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>rect</span></span><span class=GramE>(</span>160,
+130, 12, 1);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>blendMode</span></span><span class=GramE>(</span>MULTIPLY);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>fill(</span>180);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>circle(</span>166, 129, 3);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>/*
+pencil and pen */<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>blendMode</span></span><span class=GramE>(</span>BLEND);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>fill(</span>170, 40, 100);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>rect</span></span><span class=GramE>(</span>190,
+130, 6, 4, 2);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>fill(</span>221, 170, 61);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>rect</span></span><span class=GramE>(</span>195,
+130, 70, 4);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>fill(</span>200);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>rect</span></span><span class=GramE>(</span>195,
+130, 4, 4);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>fill(</span>185, 152, 111);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>triangle(</span>265, 130, 265, 134, 272, 132)<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>fill(</span>200);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>rect</span></span><span class=GramE>(</span>198,
+160, 6, 5, 2);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>fill(</span>50);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>ellipse(</span>241, 162.5, 40, 7);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>fill(</span>100);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>rect</span></span><span class=GramE>(</span>201,
+159, 40, 7, 2);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>fill(</span>200, 100);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>rect</span></span><span class=GramE>(</span>201,
+164, 40, 2);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>pop(</span>); <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>/*
+top layer outline */<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>push(</span>);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>stroke('#317b8c');<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>strokeWeight</span></span><span class=GramE>(</span>3);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>fill(</span>0,0);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>rect</span></span><span class=GramE>(</span>0,
+-50, 168, 65);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>pop(</span>);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>//draw the lid<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>push(</span>);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>stroke('#317b8c');<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>strokeWeight</span></span><span class=GramE>(</span>3);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>fill('#7edbff');<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>quad(</span>-84, -85.5, 84, -85.5, 91, -152.1, -91, -152.1);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>pop(</span>);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>fill(</span>110);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>textSize</span></span><span class=GramE>(</span>20);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>text(</span>' The\<span class=SpellE>nLost</span>', -140, 80);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=SpellE><span class=GramE>textSize</span></span><span class=GramE>(</span>60)<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
+class=GramE>text(</span>'<span class=SpellE>PenBox</span>', -90, 105);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>}</span></p>
+
+
       </blockquote>
     </div>
   </body>
