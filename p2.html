@@ -93,15 +93,363 @@ I pictured colorful stars with changing sizes and points, some were thin and som
       </h1>
 
       <p>
-        The description written by my partner Ziyan is concise. After a quick reading, I could imagine the 2-layer blue pen box with a delicate drawer in my head. The little cards with red star that was stored in the drawer really reminds me of my primary school time and I feel the empathy of sadness when losing the cards. However, the structure of the top layer is a little bit fuzzy, with unclear descriptions of the top left compartments—whether they lie in rows or in columns.<br>
-        In accomplishing this assignment,  I found out a big difference between drawing with codes and drawing with hands. I need to think in the logic of programming, for example, using coordinates to indicate the positions, shifting anchor points, and the later the figure is drawn, the higher the layer is.
-      
+        In computer graphics, images and patterns are all parameterized and could be generated from mathematics. <br><br>
+The forms of stars are protean due to the infinite values of outer and inner circle radiuses even in a limited range. The larger the difference of the radiuses is, the thinner the star point is. And with the increasing number of points, the star are more like a circle. Therefore, the point number is limited in a range of 3 to 8 for better illustration on this 400px*400px canvas.<br><br>
+The pattern of the trunk is also unpredictable, with 10px-vertical-length lines in increasing thickness joint together. Every line ends at the random position shifting 10px left or right horizontally. The extreme situation comes when every line is towards the same direction but the probability is less than 1/1000000000000000000000000000. Hence, almost all the time, we could see an arbitrary winding trunk.
       </p>
 
       <!-- 5. code -->
       <h1>
         Code
       </h1>
+      <blockquote>
+       <div class=WordSection1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal><span lang=EN-US>function setup() {<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>createCanvas(400, 400);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>background(255);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>//
+draw the stars in the start page<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>for(let sr=50; sr&lt;=200; sr+=50) {<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
+</span>push();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
+</span>blendMode(DARKEST);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
+</span>noStroke();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
+</span>fill(251, 226, 95, 100);<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
+</span>star(410, 350, sr, sr/2, 5);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
+</span>pop();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>//
+guiding text in the start page<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>textSize(40);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>text(&quot;</span><span lang=EN-US style='font-family:"Apple Color Emoji";
+mso-bidi-font-family:"Apple Color Emoji"'>✨</span><span lang=EN-US>Click and\n</span><span
+lang=EN-US style='font-family:"Apple Color Emoji";mso-bidi-font-family:"Apple Color Emoji"'>✨</span><span
+lang=EN-US>move your mouse\n</span><span lang=EN-US style='font-family:"Apple Color Emoji";
+mso-bidi-font-family:"Apple Color Emoji"'>✨</span><span lang=EN-US>to
+generate\n</span><span lang=EN-US style='font-family:"Apple Color Emoji";
+mso-bidi-font-family:"Apple Color Emoji"'>✨</span><span lang=EN-US>your own\n</span><span
+lang=EN-US style='font-family:"Apple Color Emoji";mso-bidi-font-family:"Apple Color Emoji"'>✨</span><span
+lang=EN-US>STAR TREE!</span><span lang=EN-US style='font-family:"Apple Color Emoji";
+mso-bidi-font-family:"Apple Color Emoji"'>✨</span><span lang=EN-US>&quot;, 20,
+60);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>frameRate(30);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>let R, G, B;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>let trytimes=0;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>function draw() {<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>if(mouseIsPressed) { <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
+</span>// get the random parameters for the star<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
+</span>let R1 = int(random(10,30)), R2 = int(random(5,10)),
+Np=int(random(3,8)); <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
+</span>// determine the background color from the mouse position<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span>R
+= map(mouseX, 0, 400, 50, 200, true);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span>G
+= 255 + map(mouseY, 0, 400, -50, -200, true);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span>B
+= map(mouseX*mouseY, 0, 1600, 20, 220, true);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
+</span>background(R ,G, B);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
+</span>let times = 350;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
+</span>let lastx = 200, lasty = 240; // start point<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
+</span>while(times--) {<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>     
+</span>x = random(0,400); y=random(0,400);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>     
+</span>if(inEllipse(x,y)) {<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>       
+</span>push();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>       
+</span>// draw a star with random color<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>      
+</span><span style='mso-spacerun:yes'> </span>noStroke();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>       
+</span>fill(random(150,255), random(150,255), random(150,255),
+random(150,255));<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>       
+</span>star(x, y, R1, R2, Np);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>       
+</span>// connect this star with last star<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>       
+</span>strokeWeight(1);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>       
+</span>blendMode(LIGHTEST);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>       
+</span>stroke(R+30, G+30, B+30);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>       
+</span>line(lastx, lasty, x, y);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>       
+</span>lastx = x;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>       
+</span>lasty = y;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>       
+</span>pop();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>     
+</span>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>function keyPressed() {<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>setup();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>function mousePressed() {<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>trytimes++; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>redraw(); <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>function mouseReleased() {<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>//
+draw the random trunk<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>push();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>blendMode(LIGHTEST);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>let
+thisx=200, thisy=240;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>let
+nextx, nexty;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>for(let times=0; times&lt;=160; times+=8) {<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
+</span>nextx = thisx + int(random(-10, 10));<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
+</span>nexty = thisy + 8;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
+</span>stroke(R+30, G+30, B+30);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
+</span>strokeWeight(times/160*60);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
+</span>line(thisx, thisy, nextx, nexty);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
+</span>thisx = nextx;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
+</span>thisy = nexty;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>pop();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>//
+show attempts and congrats<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>push();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>textSize(10);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>fill(255, 150);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>textFont('Courier New');<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>if(trytimes
+== 1) text(str(trytimes)+' attempt', 10, 10);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>else text(str(trytimes)+' attempts', 10, 10);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>pop();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>push();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>textFont('Courier New');<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>textSize(10); <o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>fill(255);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>if(thisx&lt;=200) text(&quot;This is your unique\n<span
+style='mso-spacerun:yes'>         </span>STAR TREE!&quot;, 280, 370);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>else text(&quot;This is your unique\nSTAR TREE!&quot;, 20, 370);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>pop();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>// limit the stars in a ellipse at
+(200,160) with r1=200 r2=120<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>function inEllipse(x,y) {<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>let
+ck = (x-200)*(x-200)/40000 + (y-160)*(y-160)/14400;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>if(ck&gt;1) return false;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>else return true;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>// according to the star function from
+p5.js reference<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>function star(x, y, radius1, radius2,
+npoints) {<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>let
+angle = TWO_PI / npoints;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>let
+halfAngle = angle / 2.0;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>beginShape();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>for
+(let a = 0; a &lt; TWO_PI; a += angle) {<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
+</span>let sx = x + cos(a) * radius2;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
+</span>let sy = y + sin(a) * radius2;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
+</span>vertex(sx, sy);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
+</span>sx = x + cos(a + halfAngle) * radius1;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
+</span>sy = y + sin(a + halfAngle) * radius1;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
+</span>vertex(sx, sy);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
+</span>endShape(CLOSE);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US>}</span></p>
+
+</div> 
+      </blockquote>
     </div>
       </body>
 </html>
