@@ -112,36 +112,37 @@
         Design Process
       </h1>
       <p>
-      A lot of fun in redesigning this monster! <br /><br />
-      First, I got the upper body from Nishra’s drawing and the lower body from
-      Yumeng’s. I tried to integrate the 2 parts with my monster’s head in
-      Photoshop and it’s shown below.<br />
-         <iframe
+        A lot of fun in redesigning this monster! <br /><br />
+        First, I got the upper body from Nishra’s drawing and the lower body
+        from Yumeng’s. I tried to integrate the 2 parts with my monster’s head
+        in Photoshop and it’s shown below.<br />
+        <iframe
           width="720px"
           height="1296px"
           src="https://cdn.glitch.com/fbc2a06c-a0ad-427a-ae11-00252e4e8f39%2FExquisite%20Corpse.jpg?v=1601390142707"
         >
         </iframe>
-      Next, I thought about how to unify the style so that the 3 parts looks
-      harmonious. I tried to use curves but the filled colors are rather too
-      simple or complicated. Therefore, I found a intermediate way that is to
-      use the triangles to divide the character and create the low-poly
-      style.<br />
+        Next, I thought about how to unify the style so that the 3 parts looks
+        harmonious. I tried to use curves but the filled colors are rather too
+        simple or complicated. Therefore, I found a intermediate way that is to
+        use the triangles to divide the character and create the low-poly
+        style.<br />
         <iframe
           width="400px"
           height="600px"
           src="https://cdn.glitch.com/fbc2a06c-a0ad-427a-ae11-00252e4e8f39%2F1.svg?v=1601389878018"
         >
         </iframe>
-      Adobe Illustrator was used to set the triangles and the shapes as shown
-      above. Then, I declared every triangle’s position and color in p5.js
-      manually that requires a great deal of patience. After finishing all the
-      still part of the character, I attempted to add some motion. Finally, with
-      stars moving in the background, the monster could move the eyes with the
-      mouse, so it is with the flower pattern. The lower “plate” also giggles
-      like a seesaw. (But actually it ends up rotating counterclockwise if you
-      let it move. XD) One more thing, press the mouse and the monster spew up a
-      rainbow. It doesn’t mean anything, but it brings a spark of fun.<br /><br />
+        Adobe Illustrator was used to set the triangles and the shapes as shown
+        above. Then, I declared every triangle’s position and color in p5.js
+        manually that requires a great deal of patience. After finishing all the
+        still part of the character, I attempted to add some motion. Finally,
+        with stars moving in the background, the monster could move the eyes
+        with the mouse, so it is with the flower pattern. The lower “plate” also
+        giggles like a seesaw. (But actually it ends up rotating
+        counterclockwise if you let it move. XD) One more thing, press the mouse
+        and the monster spew up a rainbow. It doesn’t mean anything, but it
+        brings a spark of fun.<br /><br />
       </p>
 
       <h1>
@@ -149,29 +150,1261 @@
       </h1>
 
       <p>
-      It’s a monster.<br>
-It’s a lonely monster.<br>
-It’s a lonely monster traveling across the universe.<br>
-It has a terrifying appearance and the ability to destroy a planet. <br>
-It leaps millions of light year but couldn’t meet a single creature.<br>
-It is filled with power that cannot be shown to the outside world. <br>
-It feels nothing but lonely.<br>
-All it can do is to spew up a rainbow.<br>
-It is controlled in a micro universe.<br>
-It can never escape. <br>
+        It’s a monster.<br />
+        It’s a lonely monster.<br />
+        It’s a lonely monster traveling across the universe.<br />
+        It has a terrifying appearance and the ability to destroy a planet.
+        <br />
+        It leaps millions of light year but couldn’t meet a single creature.<br />
+        It is filled with power that cannot be shown to the outside world.
+        <br />
+        It feels nothing but lonely.<br />
+        All it can do is to spew up a rainbow.<br />
+        It is controlled in a micro universe.<br />
+        It can never escape. <br />
       </p>
       <!-- 4. reflection -->
       <h1>
         Reflection
       </h1>
 
-      <p></p>
+      <p>
+        The exquisite corpse brings a lot of fun and surprises. Before, drawing
+        is a process of visualizing the image in the mind on a canvas. But this
+        being is a total mystery until you finish the puzzle at the end. Unlike
+        the computer generated random pattern, each piece of it is a part of the
+        creation of a real person. It introduces stories, thoughts, as well as
+        reflections, which make the surreal narrative.
+      </p>
 
       <!-- 5. code -->
       <h1>
         Code
       </h1>
-      <blockquote></blockquote>
+      <blockquote>
+        <div class="WordSection1" style="layout-grid:15.6pt">
+          <p class="MsoNormal"><span lang="EN-US">function setup() {</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"> createCanvas(400, 600);</span>
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> noStroke();</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"> angleMode(DEGREES);</span>
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US">}</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US">&nbsp;</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              >function tri(x1, y1, x2, y2, x3, y3, color) {</span
+            >
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> push();</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> fill(color);</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"> triangle(x1, y1, x2, y2, x3, y3);</span>
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> pop();</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US">}</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US">&nbsp;</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">function Eye(x, y) {</span>
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> push();</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> fill('#7D0D05');</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              let tx = map(mouseX, 0, 400, -6, 8, true);</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              let ty = map(mouseY, 0, 600, -6, 8, true);</span
+            >
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> translate(tx, ty);</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> beginShape();</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              for (let a = 0; a &lt; 360; a += 360 / 6) {</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"> let sx = x + cos(a) * 8;</span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"> let sy = y + sin(a) * 8;</span>
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> vertex(sx, sy);</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> }</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> endShape(CLOSE);</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US">&nbsp;</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"> stroke('ffffffaF');</span>
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> strokeWeight(3);</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"> point(x - 2, y - 2);</span>
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> pop();</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US">}</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US">&nbsp;</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US">function Head() {</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> push();</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> fill('#231D0F');</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"> rect(136, 110, 70, 50);</span>
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> fill('#F3CC84');</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"> rect(140, 60, 70, 40);</span>
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> Eye(150, 77);</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> Eye(195, 85);</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> pop();</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(120, 136, 152, 152, 136, 160, '#35EDA0');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(176, 160, 152, 152, 136, 160, '#0DDC6D');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(256, 160, 184, 176, 136, 160, '#07BF47');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(176, 160, 200, 128, 256, 160, '#1FE47A');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(200, 96, 200, 128, 256, 160, '#29EBA5');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(200, 96, 264, 104, 256, 160, '#43F1C0');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(200, 96, 208, 88, 264, 104, '#47EDBE');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(200, 96, 208, 88, 264, 104, '#47EDBE');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(264, 88, 208, 88, 264, 104, '#67F0CB');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(264, 88, 208, 88, 208, 80, '#47EDBE');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(264, 88, 256, 72, 208, 80, '#5CF2E5');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(200, 72, 256, 72, 208, 80, '#48F1D9');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(200, 72, 256, 72, 240, 48, '#4CF5F5');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(200, 72, 224, 32, 240, 48, '#45F3DC');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(200, 72, 224, 32, 160, 72, '#33EFBE');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(200, 24, 224, 32, 160, 72, '#40F1D7');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(200, 24, 168, 32, 160, 72, '#3EEFD2');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(144, 40, 168, 32, 160, 72, '#3EF0BD');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(144, 40, 152, 64, 160, 72, '#2EEDB6');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(144, 40, 152, 64, 128, 64, '#32EC9C');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(144, 72, 152, 64, 128, 64, '#2EF0D1');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(144, 72, 120, 88, 128, 64, '#2DF0B2');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(144, 72, 120, 88, 144, 80, '#30FFBD');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(152, 88, 120, 88, 144, 80, '#2BE2B2');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(152, 88, 160, 80, 192, 88, '#3BEFC3');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(192, 80, 160, 80, 192, 88, '#38EF9B');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(192, 80, 160, 80, 160, 72, '#3BFFC5');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(192, 80, 200, 72, 160, 72, '#35E6B2');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(192, 88, 120, 88, 120, 96, '#24F0B9');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(192, 88, 200, 96, 120, 96, '#35EDBC');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(112, 128, 200, 96, 120, 96, '#22F091');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(112, 128, 200, 96, 120, 136, '#24FF9A');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(152, 120, 200, 96, 200, 128, '#45F3A8');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(120, 136, 136, 128, 152, 152, '#29E795');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(184, 176, 256, 160, 256, 168, '#09810D');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(288, 168, 256, 160, 256, 168, '#33A865');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(272, 128, 256, 160, 264, 104, '#16DD7D');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(264, 88, 272, 104, 264, 104, '#0FC574');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(264, 88, 272, 72, 256, 72, '#37EBBF');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(240, 48, 264, 48, 256, 72, '#2CF0D6');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(240, 48, 240, 24, 224, 32, '#3BF1DE');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(136, 128, 152, 128, 152, 120, 'DEF5E5');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(152, 120, 200, 128, 160, 128, 'DDF4E2');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(136, 128, 152, 144, 152, 152, 'DFECDC');</span
+            >
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> push();</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> beginShape();</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> fill('EDE9D8');</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> vertex(152, 152);</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> vertex(166, 140);</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> vertex(168, 152);</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> vertex(173, 144);</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> vertex(176, 160);</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> endShape();</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> beginShape();</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> fill('ECE9D5');</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> vertex(180, 137);</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> vertex(190, 136);</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> vertex(200, 128);</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> vertex(176, 160);</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> endShape();</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> pop();</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US">}</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US">&nbsp;</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">function UpperBody() {</span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(136, 160, 72, 192, 104, 168, '#EFECF5');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(136, 160, 72, 192, 152, 168, '#E4E6F2');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(136, 160, 184, 176, 152, 168, '#B4C1DE');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(200, 216, 184, 176, 152, 168, '#929DB4');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(256, 168, 184, 176, 208, 184, '#E6F2E8');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(200, 216, 184, 176, 208, 184, '#EBECF1');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(200, 216, 256, 168, 208, 184, '#E8F7F0');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(200, 216, 256, 168, 288, 168, '#B9D0E3');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(200, 216, 304, 200, 288, 168, '#E4EAED');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(312, 184, 304, 200, 288, 168, '#DCE9F1');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(312, 184, 304, 200, 328, 248, '#809DC9');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(312, 184, 328, 200, 328, 248, '#E8E9EB');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(360, 304, 328, 200, 328, 248, '#D4E0E9');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(280, 272, 304, 200, 328, 248, '#B9CBE1');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(280, 272, 304, 200, 272, 240, '#C1DBF3');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(200, 216, 304, 200, 272, 240, '#E2E9EF');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(272, 240, 280, 272, 200, 216, '#D5E6F3');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(288, 320, 280, 272, 200, 216, '#E1EBF2');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(288, 320, 168, 240, 200, 216, '#DCE9F1');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(160, 208, 152, 168, 200, 216, '#4A5E7B');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(160, 208, 152, 168, 72, 192, '#CCCED9');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(160, 208, 168, 240, 200, 216, '#50637C');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(160, 208, 168, 240, 72, 192, '#E1EAF3');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(328, 248, 280, 272, 288, 320, '#BED0E5');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(328, 248, 360, 304, 288, 320, '#84B0DF');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(72, 192, 168, 240, 56, 216, '#DBE4ED');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(128, 240, 168, 240, 56, 216, '#799AC9');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(128, 240, 48, 272, 56, 216, '#B0CAE7');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(128, 240, 48, 272, 120, 304, '#9AAECB');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(56, 304, 48, 272, 120, 304, '#CCDCF0');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(168, 240, 128, 240, 288, 320, '#ACCEEE');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(120, 304, 128, 240, 288, 320, '#2B62AC');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(120, 304, 240, 400, 288, 320, '#367DD5');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(120, 304, 240, 400, 168, 408, '#6A9FE0');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(120, 304, 144, 408, 168, 408, '#2A62AC');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(200, 416, 240, 400, 168, 408, '#557FBA');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(200, 416, 240, 400, 256, 408, '#1D284B');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(256, 408, 240, 400, 288, 320, '#719DD8');</span
+            >
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> //right arm</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(120, 304, 56, 304, 112, 456, '#E8F2F9');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(120, 304, 144, 408, 112, 456, '#DAEDF5');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(168, 440, 144, 408, 112, 456, '#EAEBED');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(168, 440, 136, 480, 112, 456, '#F3F3F5');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(168, 440, 136, 480, 168, 472, '#E5E4EA');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(168, 440, 176, 448, 168, 472, '#8E949E');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(168, 440, 176, 448, 176, 440, '#CFE0ED');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(152, 480, 136, 480, 168, 472, '#C5CAD8');</span
+            >
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> //left arm</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(288, 320, 256, 408, 296, 432, '#D2E4F2');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(288, 320, 360, 304, 296, 432, '#E4ECF9');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(224, 432, 256, 408, 296, 432, '#EEEFEE');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(224, 432, 224, 456, 296, 432, '#D3D8E4');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(224, 456, 280, 480, 296, 432, '#ECEDEE');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(224, 456, 280, 480, 256, 480, '#8696A9');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(304, 464, 280, 480, 296, 432, '#E7E8EB');</span
+            >
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US">}</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US">&nbsp;</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">function UpperBodyPattern() {</span>
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> push();</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              let tx = map(mouseX, 0, 400, -8, 10, true);</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              let ty = map(mouseY, 0, 600, -5, 5, true);</span
+            >
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> translate(tx, ty);</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"> blendMode(MULTIPLY);</span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(152, 304, 176, 320, 168, 328, '#25416C');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(192, 328, 176, 320, 168, 328, '#33517D');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(192, 328, 176, 296, 176, 320, '#233A64');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(192, 328, 200, 296, 200, 328, '#1E3662');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(240, 304, 200, 328, 216, 328, '#425983');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(240, 328, 256, 312, 216, 328, '#2D4770');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(240, 328, 240, 336, 264, 328, '#26446C');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(240, 328, 240, 336, 216, 328, '#86A3CE');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(232, 344, 240, 336, 216, 328, '#7899C6');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(232, 344, 240, 336, 256, 350, '#325EA3');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(232, 344, 232, 360, 248, 368, '#3F638F');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(232, 344, 232, 360, 216, 328, '#84A1CB');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(216, 352, 232, 360, 216, 328, '#657EA7');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(216, 352, 232, 360, 232, 376, '#2D4465');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(216, 328, 216, 352, 200, 344, '#486795');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(216, 328, 192, 328, 200, 344, '#2E4B73');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(168, 328, 192, 328, 200, 344, '#42659C');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(168, 328, 144, 344, 200, 344, '#223A68');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(184, 352, 176, 344, 200, 344, '#324E7B');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(184, 352, 176, 344, 160, 368, '#224170');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(184, 352, 176, 376, 200, 352, '#43618F');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(184, 352, 200, 344, 200, 352, '#617EA4');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(216, 352, 200, 344, 200, 352, '#6983AD');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(208, 360, 216, 352, 200, 352, '#506C93');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(200, 376, 200, 352, 208, 360, '#28405F');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(208, 360, 216, 352, 216, 376, '#445E80');</span
+            >
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> pop();</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US">}</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US">&nbsp;</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">function LowerBody1() {</span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(144, 408, 168, 408, 160, 488, '#EFE03E');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(200, 416, 168, 408, 160, 488, '#E8D940');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(200, 416, 272, 472, 160, 488, '#EED93E');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(200, 416, 272, 472, 240, 400, '#E4CE34');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(216, 504, 272, 472, 160, 488, '#E4B40D');</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(216, 504, 192, 504, 160, 488, '#BF9605');</span
+            >
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US">}</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US">&nbsp;</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US">let angle = 20;</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US">&nbsp;</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">function LowerBody2() {</span>
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> push();</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> let tx = 205,</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> ty = 496;</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> translate(tx, ty);</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              let add = int(millis() / 1000) % 2 ? 1 : -1;</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              let pa = (millis() / 1000 - int(millis() / 1000));</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"> angle = angle + add * pa;</span>
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> rotate(angle);</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(192 - tx, 360 - ty, -120 - tx, 576 - ty, 544 - tx, 520 - ty,
+              '#EDEBF8c8');</span
+            >
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> strokeWeight(3);</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> stroke('#3B5093');</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(6 - tx, 496 - ty, 272 - tx, 536 - ty, 336 - tx, 448 - ty,
+              '#E6ECF364');</span
+            >
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> strokeWeight(2);</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(112 - tx, 504 - ty, 285 - tx, 464 - ty, 256 - tx, 520 - ty,
+              '#F0EFF464');</span
+            >
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> strokeWeight(1);</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              tri(208 - tx, 488 - ty, 144 - tx, 504 - ty, 256 - tx, 504 - ty,
+              '#F2F2E064');</span
+            >
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> pop();</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US">}</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US">&nbsp;</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              >let rainbow_color = [&quot;#F80000&quot;, &quot;#F8A000&quot;,
+              &quot;#F8F800&quot;, &quot;#007C00&quot;, &quot;#0000F8&quot;,
+              &quot;#49007E&quot;, &quot;#E77EE7&quot;];</span
+            >
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US">&nbsp;</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">function rainbow(num) {</span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              let tx = map(mouseX, 0, 400, -5, 5, true);</span
+            >
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"> let ty = map(mouseY, 0, 600, -400, 0);</span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">
+              let a = int((millis() / 1000 - int(millis() / 1000)) * 10) % 2 ? 1
+              : -1;</span
+            >
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> let step = 6;</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"> let jmax = 472 + ty;</span>
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> push();</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"> fill(rainbow_color[num]);</span>
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> beginShape();</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"> let x = 146 + num * step + tx;</span>
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> let y = 128;</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"> for (let j = 0; j &lt; jmax; j += 3) {</span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"> let i = j % 2 ? a : -a;</span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"> vertex(x + i, y + j);</span>
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> }</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"> vertex(x + step, y + jmax);</span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"> for (let j = 0; j &lt; jmax; j += 3) {</span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"> let i = j % 2 ? -a : a;</span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"> vertex(x + step + i, y + jmax - j);</span>
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> }</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> endShape();</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> pop();</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US">}</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US">&nbsp;</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US">function Slow() {</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> let num = 50;</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> while (num--) {</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> push();</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"> strokeWeight(random(1, 5));</span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"> stroke(255, 255, 255, random(50, 205));</span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"> point(random(0, 400), random(0, 600));</span>
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> pop();</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> }</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US">}</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US">&nbsp;</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US">let spew = false;</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US">&nbsp;</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US">function draw() {</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"> background('#3B5093');</span>
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> Slow();</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> Head();</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> LowerBody2();</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> LowerBody1();</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US"> UpperBody();</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"> UpperBodyPattern();</span>
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> if (spew)</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"> for (let i = 0; i &lt; 7; i++)</span>
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> rainbow(i);</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US">}</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US">&nbsp;</span></p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">function mousePressed() {</span>
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US"> spew = !spew</span></p>
+
+          <p class="MsoNormal"><span lang="EN-US">}</span></p>
+        </div>
+      </blockquote>
     </div>
   </body>
 </html>
