@@ -44,18 +44,19 @@
       <div class="fullwidth">
         <!-- below width and height refers to the dimensions of your sketch-->
 
-<!--         <iframe
+        <!--         <iframe
           width="400px"
           height="400px"
           src="https://editor.p5js.org/katherineKKM/embed/OINPXY4y6"
         ></iframe> -->
         <iframe
-                width="400px"
-                height="400px"
-                src="https://editor.p5js.org/Mustard-Roy/embed/sib2Ej1s9">
+          width="400px"
+          height="400px"
+          src="https://editor.p5js.org/Mustard-Roy/embed/sib2Ej1s9"
+        >
         </iframe>
         <p>
-          Designed by Haoshu Yang.<br>
+          Designed by Haoshu Yang.<br />
           Partner: Ziyan Cai
         </p>
       </div>
@@ -66,7 +67,17 @@
       </h1>
 
       <p>
-        When I was in primary school, my parents bought me a multi-function pen box. I like this pen box very much because it has many compartments and functions, which is different from the ordinary pen bag with only one opening. The pen case is blue and it has two layers. Open the lid of the top layer. There are two compartments on the top left for my eraser and pencil sharpener, and two large compartments on the right for my pens. The bottom layer is a drawer that pops up with just a click. I often used it to store little CARDS with little red stars that teachers gave me for my good performance. However, on the day of graduation,  I found that my pen box was missing when I got home. I was very sad that day because I lost all my CARDS.
+        When I was in primary school, my parents bought me a multi-function pen
+        box. I like this pen box very much because it has many compartments and
+        functions, which is different from the ordinary pen bag with only one
+        opening. The pen case is blue and it has two layers. Open the lid of the
+        top layer. There are two compartments on the top left for my eraser and
+        pencil sharpener, and two large compartments on the right for my pens.
+        The bottom layer is a drawer that pops up with just a click. I often
+        used it to store little CARDS with little red stars that teachers gave
+        me for my good performance. However, on the day of graduation, I found
+        that my pen box was missing when I got home. I was very sad that day
+        because I lost all my CARDS.
       </p>
 
       <!-- 4. reflection -->
@@ -75,479 +86,1066 @@
       </h1>
 
       <p>
-        The description written by my partner Ziyan is concise. After a quick reading, I could imagine the 2-layer blue pen box with a delicate drawer in my head. The little cards with red star that was stored in the drawer really reminds me of my primary school time and I feel the empathy of sadness when losing the cards. However, the structure of the top layer is a little bit fuzzy, with unclear descriptions of the top left compartments—whether they lie in rows or in columns.<br><br>
-        In accomplishing this assignment,  I found out a big difference between drawing with codes and drawing with hands. I need to think in the logic of programming, for example, using coordinates to indicate the positions, shifting anchor points, and the later the figure is drawn, the higher the layer is.
-      
+        The description written by my partner Ziyan is concise. After a quick
+        reading, I could imagine the 2-layer blue pen box with a delicate drawer
+        in my head. The little cards with red star that was stored in the drawer
+        really reminds me of my primary school time and I feel the empathy of
+        sadness when losing the cards. However, the structure of the top layer
+        is a little bit fuzzy, with unclear descriptions of the top left
+        compartments—whether they lie in rows or in columns.<br /><br />
+        In accomplishing this assignment, I found out a big difference between
+        drawing with codes and drawing with hands. I need to think in the logic
+        of programming, for example, using coordinates to indicate the
+        positions, shifting anchor points, and the later the figure is drawn,
+        the higher the layer is.
       </p>
 
       <!-- 5. code -->
       <h1>
         Code
       </h1>
-      
+
       <blockquote>
-
-        <div class=WordSection1 style='layout-grid:15.6pt'>
-
-<p class=MsoNormal><span lang=EN-US>function setup() {<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>createCanvas(400, 400);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>background(50, 50, 50);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>angleMode(DEGREES);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>rectMode(CENTER);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US>}<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US>//modified by the star function from p5.js
-reference<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US>function star(x, y, radius1, radius2) {<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>var
-angle = 360 / 5;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>var
-halfAngle = angle / 2;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>beginShape();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>for
-(var a = 0; a &lt; 360; a += angle) {<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>var sx = x + cos(a) * radius2;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>var sy = y + sin(a) * radius2;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>vertex(sx, sy);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>sx = x + cos(a + halfAngle) * radius1;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>sy = y + sin(a + halfAngle) * radius1;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>vertex(sx, sy);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>endShape(CLOSE);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US>}<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US>function draw_card(degree) {<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>push();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>rotate(degree);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>stroke(0, 150);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>strokeWeight(0.2);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>fill(245);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>rect(0, 2, 40, 30);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>fill(220, 20, 60);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>noStroke();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> </span><span
-style='mso-spacerun:yes'> </span>star(0, 2, 5, 10);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>pop();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US>}<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US>function draw() {<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>translate(width/2, height/2);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>//background<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>push();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>fill(110);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>textSize(20);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>text(' The\nLost', -140, 80);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>textSize(60)<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>text('PenBox', -90, 105);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>blendMode(DODGE);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>noStroke();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>fill(20, 100, 255, 100);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>rect(-10, 100, 260, 10);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>pop();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>//draw the drawer<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>push();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>stroke(135, 206, 235);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>strokeWeight(3.5);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>fill(100, 191, 255);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>rect(0, 0, 150, 50);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>noStroke();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>fill('#317b8c');<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>rect(0, 25, 160, 5);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>pop();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>//draw the CARDS<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>draw_card(5);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>draw_card(8);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>draw_card(-3);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>draw_card(-10);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>//draw the top layer<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>/*
-total layer */<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>push();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>stroke(135, 206, 255);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>strokeWeight(5);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>fill(20, 191, 255);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>rect(0, -50, 160, 60);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>pop();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>/*
-compartments */<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>push();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>translate(-width/2, -height/2);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>rectMode(CORNER);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>stroke(135, 206, 255);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>strokeWeight(5);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>fill(0,0);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>rect(120, 120, 30, 20);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>rect(150, 120, 30, 20);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>rect(180, 120, 100, 30);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>rect(180, 150, 100, 30);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>/*
-eraser */<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>stroke(0, 150);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>strokeWeight(0.2);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>fill(245);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>rect(129, 126, 14, 7.5, 1.8, 0, 0, 1.8);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>noStroke();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>fill(255, 20, 147, 100);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>rect(133, 126, 10, 7.5)<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>/*
-pencil sharpener */<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>noStroke();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>fill(255, 240, 147);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>rect(159, 125, 14, 9, 1);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>fill(150);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>rect(160, 127, 12, 4);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>blendMode(LIGHTEST);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>fill(200);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>rect(160, 130, 12, 1);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>blendMode(MULTIPLY);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>fill(180);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>circle(166, 129, 3);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>/*
-pencil and pen */<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>blendMode(BLEND);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>fill(170, 40, 100);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>rect(190, 130, 6, 4, 2);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>fill(221, 170, 61);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>rect(195, 130, 70, 4);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>fill(200);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>rect(195, 130, 4, 4);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>fill(185, 152, 111);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>triangle(265, 130, 265, 134, 272, 132)<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>fill(200);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>rect(198, 160, 6, 5, 2);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>fill(50);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>ellipse(241, 162.5, 40, 7);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>fill(100);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>rect(201, 159, 40, 7, 2);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>fill(200, 100);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>rect(201, 164, 40, 2);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>pop(); <o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>/*
-top layer outline */<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>push();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>stroke('#317b8c');<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>strokeWeight(3);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>fill(0,0);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>rect(0, -50, 168, 65);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>pop();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>//draw the lid<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>push();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>stroke('#317b8c');<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>strokeWeight(3);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>fill('#7edbff');<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>quad(-84, -85.5, 84, -85.5, 91, -152.1, -91, -152.1);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>pop();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US>}</span></p>
-
-</div>
-
-
-        
+        <div class="WordSection1" style="layout-grid:15.6pt">
+          <p class="MsoNormal">
+            <span lang="EN-US">function setup() {<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>createCanvas(400,
+              400);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>background(50, 50,
+              50);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>angleMode(DEGREES);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>rectMode(CENTER);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">}<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              >//modified by the star function from p5.js reference<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              >function star(x, y, radius1, radius2) {<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>var angle = 360 / 5;<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>var halfAngle = angle /
+              2;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>beginShape();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>for (var a = 0; a &lt;
+              360; a += angle) {<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>var sx = x + cos(a) *
+              radius2;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>var sy = y + sin(a) *
+              radius2;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>vertex(sx, sy);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>sx = x + cos(a +
+              halfAngle) * radius1;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>sy = y + sin(a +
+              halfAngle) * radius1;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>vertex(sx, sy);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>}<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>endShape(CLOSE);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">}<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">function draw_card(degree) {<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>push();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>rotate(degree);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>stroke(0, 150);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>strokeWeight(0.2);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(245);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>rect(0, 2, 40, 30);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(220, 20, 60);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>noStroke();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              ><span style="mso-spacerun:yes"> </span>star(0, 2, 5, 10);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>pop();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">}<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">function draw() {<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>translate(width/2,
+              height/2);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>//background<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>push();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(110);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>textSize(20);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>text(' The\nLost', -140,
+              80);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>textSize(60)<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>text('PenBox', -90,
+              105);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>blendMode(DODGE);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>noStroke();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(20, 100, 255,
+              100);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>rect(-10, 100, 260,
+              10);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>pop();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>//draw the drawer<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>push();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>stroke(135, 206, 235);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>strokeWeight(3.5);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(100, 191, 255);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>rect(0, 0, 150, 50);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>noStroke();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill('#317b8c');<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>rect(0, 25, 160, 5);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>pop();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>//draw the CARDS<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_card(5);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_card(8);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_card(-3);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_card(-10);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>//draw the top layer<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>/* total layer */<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>push();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>stroke(135, 206, 255);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>strokeWeight(5);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(20, 191, 255);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>rect(0, -50, 160, 60);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>pop();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>/* compartments */<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>push();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>translate(-width/2,
+              -height/2);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>rectMode(CORNER);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>stroke(135, 206, 255);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>strokeWeight(5);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(0,0);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>rect(120, 120, 30,
+              20);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>rect(150, 120, 30,
+              20);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>rect(180, 120, 100,
+              30);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>rect(180, 150, 100,
+              30);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>/* eraser */<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>stroke(0, 150);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>strokeWeight(0.2);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(245);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>rect(129, 126, 14, 7.5,
+              1.8, 0, 0, 1.8);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>noStroke();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(255, 20, 147,
+              100);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>rect(133, 126, 10,
+              7.5)<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>/* pencil sharpener */<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>noStroke();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(255, 240, 147);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>rect(159, 125, 14, 9,
+              1);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(150);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>rect(160, 127, 12, 4);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>blendMode(LIGHTEST);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(200);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>rect(160, 130, 12, 1);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>blendMode(MULTIPLY);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(180);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>circle(166, 129, 3);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>/* pencil and pen */<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>blendMode(BLEND);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(170, 40, 100);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>rect(190, 130, 6, 4,
+              2);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(221, 170, 61);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>rect(195, 130, 70, 4);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(200);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>rect(195, 130, 4, 4);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(185, 152, 111);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>triangle(265, 130, 265,
+              134, 272, 132)<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(200);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>rect(198, 160, 6, 5,
+              2);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(50);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>ellipse(241, 162.5, 40,
+              7);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(100);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>rect(201, 159, 40, 7,
+              2);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(200, 100);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>rect(201, 164, 40, 2);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>pop(); <o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>/* top layer outline
+              */<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>push();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>stroke('#317b8c');<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>strokeWeight(3);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(0,0);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>rect(0, -50, 168, 65);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>pop();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>//draw the lid<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>push();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>stroke('#317b8c');<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>strokeWeight(3);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill('#7edbff');<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>quad(-84, -85.5, 84,
+              -85.5, 91, -152.1, -91, -152.1);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>pop();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US">}</span></p>
+        </div>
       </blockquote>
     </div>
   </body>

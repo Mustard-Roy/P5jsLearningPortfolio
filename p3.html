@@ -31,7 +31,7 @@
       </ul>
     </div>
 
-     <!-- main content -->
+    <!-- main content -->
     <div class="content">
       <!-- 1. give your project  a titile -->
 
@@ -44,15 +44,16 @@
       <div class="fullwidth">
         <!-- below width and height refers to the dimensions of your sketch-->
 
-<!--         <iframe
+        <!--         <iframe
           width="400px"
           height="400px"
           src="https://editor.p5js.org/katherineKKM/embed/OINPXY4y6"
         ></iframe> -->
         <iframe
-                width="600px"
-                height="600px"
-                src="https://editor.p5js.org/Mustard-Roy/embed/0S4r7q9KmM">
+          width="600px"
+          height="600px"
+          src="https://editor.p5js.org/Mustard-Roy/embed/0S4r7q9KmM"
+        >
         </iframe>
         <p>
           Designed by Haoshu Yang.
@@ -64,46 +65,94 @@
       </h1>
 
       <p>
-        How to build a clock with 13 matchsticks? Here is an answer, with 5 matches illustrating the tens digit of the second, 5 for the ones digit, 2 for the minute and the last one for the hour. The representation of the digit number is inspired by a game in my childhood that required us to use 5 matches to create numbers from 0 to 9 one by one and saw who finish first. In this clock, the digits of second are reproduced in such way and change with an elegant and continuous animation. The rest matches represent the minute and hour in an analog clock way. The 2 pointers also move smoothly on the canvas. In the real life, it is hard to move matches in this way. But thanks to the digital world, I can recreate this virtual <b>Match Clock</b> and move the matches automatically. </p>
-      
+        How to build a clock with 13 matchsticks? Here is an answer, with 5
+        matches illustrating the tens digit of the second, 5 for the ones digit,
+        2 for the minute and the last one for the hour. The representation of
+        the digit number is inspired by a game in my childhood that required us
+        to use 5 matches to create numbers from 0 to 9 one by one and saw who
+        finish first. In this clock, the digits of second are reproduced in such
+        way and change with an elegant and continuous animation. The rest
+        matches represent the minute and hour in an analog clock way. The 2
+        pointers also move smoothly on the canvas. In the real life, it is hard
+        to move matches in this way. But thanks to the digital world, I can
+        recreate this virtual <b>Match Clock</b> and move the matches
+        automatically.
+      </p>
+
       <!-- 3. write a short description to describe what the work is about -->
       <h1>
         Design Process
       </h1>
 
       <p>
-      Here are the 3 design sketches that I brainstormed at the beginning. </p>
-      <p>
-      <iframe 
-              width="834px"
-                height="540px"
-              src="https://cdn.glitch.com/fbc2a06c-a0ad-427a-ae11-00252e4e8f39%2FDigital%20Sandglass.jpg?v=1600701942591">
-        </iframe>The first one is to build 6 digital sandglasses to show the time. The sands in the upper and the lower part of each sandglass represent both a countdown and time, which is fascinating.<br><br>
-
-        <iframe 
-              width="705px"
-                height="486px"
-              src="https://cdn.glitch.com/fbc2a06c-a0ad-427a-ae11-00252e4e8f39%2FLife%20Countdown.jpg?v=1600701927554">
-        </iframe>The second one is simply using different bars to represent the seconds in a minute, minutes in an hour, hours in a day, days in a week, days in a month, months in a year, and years in the total 80 years of life. Notice that it doesn’t mean that one’s life is fixed at 80 years, rather it is just an estimate for most people to let them better feel the time in their lives and the extra year of living could be considered a bonus. <br><br>
-
-        <iframe 
-              width="412px"
-                height="486px"
-              src="https://cdn.glitch.com/fbc2a06c-a0ad-427a-ae11-00252e4e8f39%2FMatch%20Clock.jpg?v=1600701919898">
-        </iframe>The third design is this Match Clock. I finally choose this one for 3 reasons. First, unlike the sandglass that is purely a digitalization of a physical time-representing object, the matches are not used for a clock in the reality.  Second, in contrast to the Life Countdown that is purely abstract rectangles, the matches comes from the concrete real world but move in a digital way. Therefore, the Match Clock is more experimental that blends digital canvas and real world. What’s more, I really want to have a try to use codes achieve the matchsticks’ animations. It seemed challenging but interesting. <br><br>
-
+        Here are the 3 design sketches that I brainstormed at the beginning.
       </p>
       <p>
-I started to use 5 sticks to draw each number first. <br><br>
-Then I used Keynote to make a quick animation and see how each stick moves when number changes. The overview animation made by Keynote is shown below.
- <iframe 
-              width="320px"
-                height="346px"
-              src="https://cdn.glitch.com/fbc2a06c-a0ad-427a-ae11-00252e4e8f39%2FNumber%20Keynote.gif?v=1600703141831">
-        </iframe>    </p>   
-<p>
-Finally, I tried to achieve it by codes. I started by coding a function that draws 1 match in a specific coordinate and rotate an angle. Then, I tested it and figured out how to let the specific match move and rotate on canvas. Then, I programmed the function to draw each number by 5 matches. Following, by referring to the Keynote, I programmed the function that changes the parameters of draw-match function for animation. Here with trials and errors, I finally discovered a way to record the start-changing time at the beginning of the animation in a continuous running draw function so that the movement of matches could be controlled by the time. 
-The final creative clock is exactly what I expected. It looks contracted but not simple. The animation also adds a bit of fun to this clock. I really like it!  
+        <iframe
+          width="834px"
+          height="540px"
+          src="https://cdn.glitch.com/fbc2a06c-a0ad-427a-ae11-00252e4e8f39%2FDigital%20Sandglass.jpg?v=1600701942591"
+        >
+        </iframe
+        >The first one is to build 6 digital sandglasses to show the time. The
+        sands in the upper and the lower part of each sandglass represent both a
+        countdown and time, which is fascinating.<br /><br />
+
+        <iframe
+          width="705px"
+          height="486px"
+          src="https://cdn.glitch.com/fbc2a06c-a0ad-427a-ae11-00252e4e8f39%2FLife%20Countdown.jpg?v=1600701927554"
+        >
+        </iframe
+        >The second one is simply using different bars to represent the seconds
+        in a minute, minutes in an hour, hours in a day, days in a week, days in
+        a month, months in a year, and years in the total 80 years of life.
+        Notice that it doesn’t mean that one’s life is fixed at 80 years, rather
+        it is just an estimate for most people to let them better feel the time
+        in their lives and the extra year of living could be considered a bonus.
+        <br /><br />
+
+        <iframe
+          width="412px"
+          height="486px"
+          src="https://cdn.glitch.com/fbc2a06c-a0ad-427a-ae11-00252e4e8f39%2FMatch%20Clock.jpg?v=1600701919898"
+        >
+        </iframe
+        >The third design is this Match Clock. I finally choose this one for 3
+        reasons. First, unlike the sandglass that is purely a digitalization of
+        a physical time-representing object, the matches are not used for a
+        clock in the reality. Second, in contrast to the Life Countdown that is
+        purely abstract rectangles, the matches comes from the concrete real
+        world but move in a digital way. Therefore, the Match Clock is more
+        experimental that blends digital canvas and real world. What’s more, I
+        really want to have a try to use codes achieve the matchsticks’
+        animations. It seemed challenging but interesting. <br /><br />
+      </p>
+      <p>
+        I started to use 5 sticks to draw each number first. <br /><br />
+        Then I used Keynote to make a quick animation and see how each stick
+        moves when number changes. The overview animation made by Keynote is
+        shown below.
+        <iframe
+          width="320px"
+          height="346px"
+          src="https://cdn.glitch.com/fbc2a06c-a0ad-427a-ae11-00252e4e8f39%2FNumber%20Keynote.gif?v=1600703141831"
+        >
+        </iframe>
+      </p>
+      <p>
+        Finally, I tried to achieve it by codes. I started by coding a function
+        that draws 1 match in a specific coordinate and rotate an angle. Then, I
+        tested it and figured out how to let the specific match move and rotate
+        on canvas. Then, I programmed the function to draw each number by 5
+        matches. Following, by referring to the Keynote, I programmed the
+        function that changes the parameters of draw-match function for
+        animation. Here with trials and errors, I finally discovered a way to
+        record the start-changing time at the beginning of the animation in a
+        continuous running draw function so that the movement of matches could
+        be controlled by the time. The final creative clock is exactly what I
+        expected. It looks contracted but not simple. The animation also adds a
+        bit of fun to this clock. I really like it!
       </p>
 
       <!-- 4. reflection -->
@@ -112,1003 +161,2310 @@ The final creative clock is exactly what I expected. It looks contracted but not
       </h1>
 
       <p>
-        Time, as a dimension that continuously flows in human perception, lends the changes. To measure it, we quantized the time so that in every unit, the time is stalled. Therefore, changes happen between each unit of time, and could be represented by the animations. <br><br>
-        The classic animation showing the change of time could be embodied in an analog clock, with time flowing in the ticking of the second pointer. While in the digital world, this animation can be less restrained and in the way that is hard to be realized in reality. The Match Clock here is an example of the combination of digital and real world to represent the change of time. <br><br>
-        Throughout the coding process, I have learned a lot.<br><br>
-First, I figured out a way to make an animation controlled by the specific time instead of the speed of processor. Since the draw function is continuously running, another variable should be defined as a switch to direct the animation. <br><br>
-Second, I found out that if I used a function outside the draw function to draw something, even if it iterates with time, it won’t be shown on canvas in a real-time. Rather, it is the final result of the iteration that shows on canvas.<br><br>
-Third, after debugging, I noticed that using let to declare a variable will only be used inside the {}. To access a variable in multiple blocks, we may let it at the beginning of the main block or simply as a global variable or to use var to declare.<br><br>
-        </p>
+        Time, as a dimension that continuously flows in human perception, lends
+        the changes. To measure it, we quantized the time so that in every unit,
+        the time is stalled. Therefore, changes happen between each unit of
+        time, and could be represented by the animations. <br /><br />
+        The classic animation showing the change of time could be embodied in an
+        analog clock, with time flowing in the ticking of the second pointer.
+        While in the digital world, this animation can be less restrained and in
+        the way that is hard to be realized in reality. The Match Clock here is
+        an example of the combination of digital and real world to represent the
+        change of time. <br /><br />
+        Throughout the coding process, I have learned a lot.<br /><br />
+        First, I figured out a way to make an animation controlled by the
+        specific time instead of the speed of processor. Since the draw function
+        is continuously running, another variable should be defined as a switch
+        to direct the animation. <br /><br />
+        Second, I found out that if I used a function outside the draw function
+        to draw something, even if it iterates with time, it won’t be shown on
+        canvas in a real-time. Rather, it is the final result of the iteration
+        that shows on canvas.<br /><br />
+        Third, after debugging, I noticed that using let to declare a variable
+        will only be used inside the {}. To access a variable in multiple
+        blocks, we may let it at the beginning of the main block or simply as a
+        global variable or to use var to declare.<br /><br />
+      </p>
 
       <!-- 5. code -->
       <h1>
         Code
       </h1>
       <blockquote>
-       <div class=WordSection1 style='layout-grid:15.6pt'>
-
-<p class=MsoNormal><span lang=EN-US>function setup() {<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>createCanvas(600, 600);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>angleMode(DEGREES);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US>}<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US>let img;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US>function preload() {<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>img
-= loadImage('texture4.jpg');<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US>}<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US>let start_time = 0;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US>let initial = 0;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US>let speed = 2;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US>let last_s1 = -1 , last_s0 = -1, s, s0, s1,
-m, h;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US>function draw_match(x,y,angle) {<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>push();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>translate(x,y);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>rotate(angle);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>stroke(223, 205, 147);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>strokeWeight(5);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>line(3.5,0,50,0);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>noStroke();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>fill(231, 91, 102);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>circle(50,0,7);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>pop();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US>}<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US>function change(cmd,x,y,digit) { <o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>//
-**For most of the time, cmd = last_num + this_num. ** For 9 to 0, cmd = 0. **
-For 5 to 0, cmd = -1<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>initial = 0;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>let
-ms = millis();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>let
-o = (ms-start_time)/1000*speed; //operator<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>if(cmd == 1) { // 0 to 1<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let angle1 = o*8;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let angle2 = o*54;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let x1 = o*(50*cos(36));<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let y1 = o*(50-50*sin(36));<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let angle3 = o*18;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let x2 = o*25;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let y2 = o*(100-26/cos(54)-25*tan(54));<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let angle4 = o*72;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y,36+108-angle1);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y,36+angle2); //to brown<span style='mso-spacerun:yes'>   
-</span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x+50*cos(36)-x1,y+50*sin(36)+y1,90+18-angle3); <o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-25+x2,y+26/cos(54)+25*tan(54)+y2,0);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-25+x2,y+26/cos(54)+25*tan(54)+y2,-108-angle4);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}
-else if(cmd == 3) { // 1 to 2<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let angle1 = o*45;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let x1 = o*50;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let y1 = o*50;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y,90+45+angle1);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y,90);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-x1,y+50,90);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-x1,y+100,0);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y+100-y1,180);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}
-else if(cmd == 5) { // 2 to 3<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let x1 = o*50;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y,180);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y,90);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-50+x1,y+50,90);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-50,y+100,0);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y+50,180);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}
-else if(cmd == 7) { // 3 to 4<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let x1 = o*50;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let angle1 = o*90;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let y2 = o*50;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-x1,y,180-angle1);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y,90);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y+50,90-angle1);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-50+x1,y+100-y2,0+angle1);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y+50,180);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}
-else if(cmd == 9) { // 4 to 5<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let angle1 = o*90;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let x1 = o*50;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let y1 = o*50<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-50,y,90);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y,90+angle1);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y+50,0+angle1);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-x1,y+50+y1,90-angle1);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y+50,180);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}
-else if(cmd == 11) { // 5 to 6<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let y1 = o*50;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let x1 = o*50;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let angle1 = o*90;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>       
-</span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-50,y+y1,90);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-x1,y+y1,180+angle1);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y+50,90);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-50,y+100,0);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y+50,180);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}
-else if(cmd == 13) { // 6 to 7<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let x1 = o*75;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let y1 = o*(50-25*sqrt(3));<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let x2 = o*50;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let y2 = o*50;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let angle1 = o*90;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let angle2 = o*30;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let x3 = o*25;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let y3 = o*(25*3*sqrt(3)-100);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let angle3 = o*60;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-50+x1,y+50-y1,90+angle2);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-50+x2,y+50-y2,270-angle1);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x+x2,y+50-y2,90+angle2);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-50+x3,y+100+y3,0-angle3);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x+x2,y+50-y2,180);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}
-else if(cmd == 15) { // 7 to 8<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let x1 = o*50;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let x2 = o*(25/2-50);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let y2 = o*25/2*sqrt(3);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let angle1 = o*120;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let x3 = o*25;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let angle2 = o*120;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let y3 = o*(-25*3*sqrt(3)+25*2*sqrt(3))<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let angle3 = o*240<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x+25-x1,y+25*sqrt(3),90+30);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x+x2,y+y2,180-angle1);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x+50-x1,y,90+30);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-25+x3,y+25*3*sqrt(3)+y3,-60-angle2);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x+50-x1,y,180);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}
-else if(cmd == 17) { // 8 to 9<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let x1 = o*25;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let y1 = o*(-25*sqrt(3)+50);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let angle1 = o*60;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let x2 = o*25/2;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let y2 = o*25/2*sqrt(3);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let angle2 = o*30;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let y3 = o*(-25*2*sqrt(3)+50);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let angle3 = o*90;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x+25-50+x1,y+25*sqrt(3)+y1,90+30+angle1);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x+25/2-50-x2,y+25/2*sqrt(3)-y2,60+angle2);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span>draw_match(x,y,90+30-angle2);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y+25*2*sqrt(3)+y3,180-angle3);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y,180);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}
-else if(cmd == 0) { // 9 to 0<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let x1 = o*25;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let y1 = o*(-50+26/cos(54)+25*tan(54));<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let angle1 = o*72;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let x2 = o*50;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let angle2 = o*(36+108-90);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let x3 = o*(50*cos(36));<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let y3 = o*(50*sin(36));<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let angle3 = o*18;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let y4 = o*(-50+25/cos(54)+25*tan(54));<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let angle4 = o*90;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let angle5 = o*144;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-x1,y+50+y1,-180+angle1);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-50+x2,y,90+angle2);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x+x3,y+y3,90+angle3);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-x1,y+50+y4,90-angle4);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y,180-angle5);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}
-else if(cmd == -1) { // 5 to 0<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let x1 = o*25;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span>let
-y1 = o*(26/cos(54)+25*tan(54));<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let angle1 = o*(161);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let angle2 = o*36;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let x2 = o*50*cos(36);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let y2 = o*(50*sin(36)-50)<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let angle3 = o*18;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let y3 = o*(-100+25/cos(54)+25*tan(54));<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let y4 = o*50;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>let angle4 = o*144;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><span
-style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-50+x1,y+y1,90+angle1);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y,180-angle2);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x+x2,y+50+y2,90+angle3);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-50+x1,y+100+y3,0);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y+50-y4,180-angle4);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>if(o &gt; 1 &amp;&amp; digit==0) <o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>last_s0 = s0;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>else if (o &gt; 1 &amp;&amp; digit==1) <o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>last_s1 = s1;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US>}<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US>function draw_num(x,y,cmd) {<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>if(cmd == 1) {<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y,90+45); //red<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y,90); //brown<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y+50,90); //yellow<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y+100,0); //green<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   </span><span
-style='mso-spacerun:yes'> </span>draw_match(x,y+100,180); //blue<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}
-else if(cmd == 2) {<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y,180);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y,90);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-50,y+50,90);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-50,y+100,0);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y+50,180);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}
-else if(cmd == 3) {<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y,180);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y,90);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y+50,90);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-50,y+100,0);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y+50,180); <o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}
-else if(cmd == 4) {<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-50,y,90);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y,90);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y+50,0);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y+50,90);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y+50,180); <o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}
-else if(cmd == 5) {<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-50,y,90);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y,180);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y+50,90);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-50,y+100,0);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y+50,180);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}
-else if(cmd == 6) {<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-50,y+50,90);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-50,y+50,-90);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y+50,90);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-50,y+100,0);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y+50,180);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}
-else if(cmd == 7) {<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x+25,y+25*sqrt(3),90+30);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y,180);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x+50,y,90+30);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-25,y+25*3*sqrt(3),-60);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x+50,y,180);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}
-else if(cmd == 8) {<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x+25-50,y+25*sqrt(3),90+30);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x+25/2-50,y+25/2*sqrt(3),60);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y,90+30);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y+25*2*sqrt(3),180);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y,180);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}
-else if(cmd == 9) {<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y+50,180);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-50,y,90);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y,90);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y+50,90);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y,180);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}
-else if(cmd == 0) {<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-25,y+26/cos(54)+25*tan(54),-108); //to blue<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y,36+108); //to red<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x+50*cos(36),y+50*sin(36),90+18); <o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x-25,y+25/cos(54)+25*tan(54),0);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_match(x,y,36); //to brown<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US>}<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US>function draw() {<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>background(255);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>image(img, 0, 0);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>/*draw seconds*/<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>s=second();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>s1=int(s/10); // tens digit<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>s0=s-s1*10; // ones digit<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>let
-xs1=250, ys1=220, xs0=350, ys0=220;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>if(last_s1 == -1) {<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_num(xs1,ys1,s1);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_num(xs0,ys0,s0);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> </span><span
-style='mso-spacerun:yes'>   </span>last_s1=s1;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>last_s0=s0;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>if(last_s0 != s0 &amp;&amp; last_s0 != 9) {<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>if(initial) start_time = millis();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_num(xs1,ys1,s1);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>// if(last_s0 != 9)<span style='mso-spacerun:yes'> 
-</span>change(last_s0+s0,250,200,0);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>// else change(0,250,200,0);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>change(last_s0+s0,xs0,ys0,0);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}
-else if(last_s0 != s0 &amp;&amp; last_s0 == 9) {<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>if(initial) start_time = millis();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>// draw_num(250,200,s0);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>if(last_s1 != 5) {<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>     
-</span>change(last_s1+s1,xs1,ys1,1);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>     
-</span>change(0,xs0,ys0,0);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span>}
-else {<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>     
-</span>change(-1,xs1,ys1,1);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>     
-</span>change(0,xs0,ys0,0);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}
-else {<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>initial = 1;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>last_s0 = s0;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>last_s1 = s1;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_num(xs1,ys1,s1);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>   
-</span>draw_num(xs0,ys0,s0);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>}<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>/*draw minutes*/<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>m =
-minute();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>push();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>translate(width/2,height/2);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>rotate(-90+(m+s/60)*6);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>stroke(223, 205, 147);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>strokeWeight(5);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>line(190,0,290,0);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>noStroke();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>fill(231, 91, 102);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>circle(240,0,7);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>circle(290,0,7);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>pop();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>  </span>/*draw
-hour*/<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>if(hour()&lt;=12) h = hour();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>else h = hour()%12;<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>push();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>translate(width/2,height/2);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>rotate(-90+(h+m/60+s/3600)*30);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>stroke(223, 205, 147);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>strokeWeight(5);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>line(180,0,230,0);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>noStroke();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>fill(32, 13, 15);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>circle(230,0,7);<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'> 
-</span>pop();<o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US>}</span></p>
-
-</div>
-
-
+        <div class="WordSection1" style="layout-grid:15.6pt">
+          <p class="MsoNormal">
+            <span lang="EN-US">function setup() {<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>createCanvas(600,
+              600);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>angleMode(DEGREES);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">}<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">let img;<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">function preload() {<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>img =
+              loadImage('texture4.jpg');<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">}<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">let start_time = 0;<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">let initial = 0;<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">let speed = 2;<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              >let last_s1 = -1 , last_s0 = -1, s, s0, s1, m, h;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              >function draw_match(x,y,angle) {<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>push();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>translate(x,y);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>rotate(angle);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>stroke(223, 205, 147);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>strokeWeight(5);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>line(3.5,0,50,0);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>noStroke();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(231, 91, 102);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>circle(50,0,7);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>pop();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">}<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              >function change(cmd,x,y,digit) { <o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>// **For most of the time,
+              cmd = last_num + this_num. ** For 9 to 0, cmd = 0. ** For 5 to 0,
+              cmd = -1<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>initial = 0;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let ms = millis();<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let o =
+              (ms-start_time)/1000*speed; //operator<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>if(cmd == 1) { // 0 to
+              1<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let angle1 = o*8;<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let angle2 = o*54;<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let x1 =
+              o*(50*cos(36));<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let y1 =
+              o*(50-50*sin(36));<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let angle3 = o*18;<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let x2 = o*25;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let y2 =
+              o*(100-26/cos(54)-25*tan(54));<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let angle4 = o*72;<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x,y,36+108-angle1);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y,36+angle2);
+              //to brown<span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x+50*cos(36)-x1,y+50*sin(36)+y1,90+18-angle3);
+              <o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-25+x2,y+26/cos(54)+25*tan(54)+y2,0);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-25+x2,y+26/cos(54)+25*tan(54)+y2,-108-angle4);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>} else if(cmd == 3) { // 1
+              to 2<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let angle1 = o*45;<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let x1 = o*50;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let y1 = o*50;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x,y,90+45+angle1);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y,90);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-x1,y+50,90);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-x1,y+100,0);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x,y+100-y1,180);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>} else if(cmd == 5) { // 2
+              to 3<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let x1 = o*50;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y,180);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y,90);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-50+x1,y+50,90);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-50,y+100,0);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x,y+50,180);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>} else if(cmd == 7) { // 3
+              to 4<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let x1 = o*50;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let angle1 = o*90;<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let y2 = o*50;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-x1,y,180-angle1);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y,90);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x,y+50,90-angle1);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-50+x1,y+100-y2,0+angle1);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x,y+50,180);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>} else if(cmd == 9) { // 4
+              to 5<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let angle1 = o*90;<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let x1 = o*50;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let y1 = o*50<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x-50,y,90);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x,y,90+angle1);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x,y+50,0+angle1);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-x1,y+50+y1,90-angle1);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x,y+50,180);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>} else if(cmd == 11) { //
+              5 to 6<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let y1 = o*50;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let x1 = o*50;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let angle1 = o*90;<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-50,y+y1,90);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-x1,y+y1,180+angle1);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y+50,90);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-50,y+100,0);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x,y+50,180);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>} else if(cmd == 13) { //
+              6 to 7<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let x1 = o*75;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let y1 =
+              o*(50-25*sqrt(3));<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let x2 = o*50;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let y2 = o*50;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let angle1 = o*90;<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let angle2 = o*30;<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let x3 = o*25;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let y3 =
+              o*(25*3*sqrt(3)-100);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let angle3 = o*60;<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-50+x1,y+50-y1,90+angle2);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-50+x2,y+50-y2,270-angle1);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x+x2,y+50-y2,90+angle2);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-50+x3,y+100+y3,0-angle3);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x+x2,y+50-y2,180);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>} else if(cmd == 15) { //
+              7 to 8<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let x1 = o*50;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let x2 = o*(25/2-50);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let y2 =
+              o*25/2*sqrt(3);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let angle1 = o*120;<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let x3 = o*25;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let angle2 = o*120;<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let y3 =
+              o*(-25*3*sqrt(3)+25*2*sqrt(3))<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let angle3 = o*240<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x+25-x1,y+25*sqrt(3),90+30);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x+x2,y+y2,180-angle1);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x+50-x1,y,90+30);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-25+x3,y+25*3*sqrt(3)+y3,-60-angle2);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x+50-x1,y,180);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>} else if(cmd == 17) { //
+              8 to 9<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let x1 = o*25;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let y1 =
+              o*(-25*sqrt(3)+50);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let angle1 = o*60;<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let x2 = o*25/2;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let y2 =
+              o*25/2*sqrt(3);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let angle2 = o*30;<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let y3 =
+              o*(-25*2*sqrt(3)+50);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let angle3 = o*90;<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x+25-50+x1,y+25*sqrt(3)+y1,90+30+angle1);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x+25/2-50-x2,y+25/2*sqrt(3)-y2,60+angle2);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x,y,90+30-angle2);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x,y+25*2*sqrt(3)+y3,180-angle3);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y,180);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>} else if(cmd == 0) { // 9
+              to 0<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let x1 = o*25;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let y1 =
+              o*(-50+26/cos(54)+25*tan(54));<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let angle1 = o*72;<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let x2 = o*50;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let angle2 =
+              o*(36+108-90);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let x3 =
+              o*(50*cos(36));<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let y3 =
+              o*(50*sin(36));<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let angle3 = o*18;<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let y4 =
+              o*(-50+25/cos(54)+25*tan(54));<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let angle4 = o*90;<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let angle5 = o*144;<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-x1,y+50+y1,-180+angle1);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-50+x2,y,90+angle2);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x+x3,y+y3,90+angle3);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-x1,y+50+y4,90-angle4);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x,y,180-angle5);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>} else if(cmd == -1) { //
+              5 to 0<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let x1 = o*25;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let y1 =
+              o*(26/cos(54)+25*tan(54));<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let angle1 = o*(161);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let angle2 = o*36;<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let x2 = o*50*cos(36);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let y2 =
+              o*(50*sin(36)-50)<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let angle3 = o*18;<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let y3 =
+              o*(-100+25/cos(54)+25*tan(54));<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let y4 = o*50;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let angle4 = o*144;<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-50+x1,y+y1,90+angle1);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x,y,180-angle2);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x+x2,y+50+y2,90+angle3);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-50+x1,y+100+y3,0);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x,y+50-y4,180-angle4);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>}<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>if(o &gt; 1 &amp;&amp;
+              digit==0) <o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>last_s0 = s0;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>else if (o &gt; 1
+              &amp;&amp; digit==1) <o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>last_s1 = s1;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">}<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">function draw_num(x,y,cmd) {<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>if(cmd == 1) {<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y,90+45);
+              //red<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y,90);
+              //brown<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y+50,90);
+              //yellow<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y+100,0);
+              //green<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y+100,180);
+              //blue<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>} else if(cmd == 2) {<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y,180);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y,90);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-50,y+50,90);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-50,y+100,0);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x,y+50,180);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>} else if(cmd == 3) {<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y,180);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y,90);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y+50,90);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-50,y+100,0);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y+50,180);
+              <o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>} else if(cmd == 4) {<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x-50,y,90);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y,90);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y+50,0);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y+50,90);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y+50,180);
+              <o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>} else if(cmd == 5) {<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x-50,y,90);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y,180);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y+50,90);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-50,y+100,0);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x,y+50,180);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>} else if(cmd == 6) {<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-50,y+50,90);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-50,y+50,-90);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y+50,90);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-50,y+100,0);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x,y+50,180);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>} else if(cmd == 7) {<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x+25,y+25*sqrt(3),90+30);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y,180);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x+50,y,90+30);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-25,y+25*3*sqrt(3),-60);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x+50,y,180);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>} else if(cmd == 8) {<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x+25-50,y+25*sqrt(3),90+30);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x+25/2-50,y+25/2*sqrt(3),60);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y,90+30);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x,y+25*2*sqrt(3),180);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y,180);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>} else if(cmd == 9) {<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x,y+50,180);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x-50,y,90);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y,90);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y+50,90);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y,180);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>} else if(cmd == 0) {<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-25,y+26/cos(54)+25*tan(54),-108); //to blue<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y,36+108);
+              //to red<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x+50*cos(36),y+50*sin(36),90+18); <o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >draw_match(x-25,y+25/cos(54)+25*tan(54),0);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_match(x,y,36); //to
+              brown<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>}<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">}<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">function draw() {<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>background(255);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>image(img, 0, 0);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>/*draw seconds*/<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>s=second();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>s1=int(s/10); // tens
+              digit<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>s0=s-s1*10; // ones
+              digit<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let xs1=250, ys1=220,
+              xs0=350, ys0=220;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>if(last_s1 == -1) {<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_num(xs1,ys1,s1);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_num(xs0,ys0,s0);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              ><span style="mso-spacerun:yes"> </span>last_s1=s1;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>last_s0=s0;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>}<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>if(last_s0 != s0
+              &amp;&amp; last_s0 != 9) {<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>if(initial) start_time =
+              millis();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_num(xs1,ys1,s1);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>// if(last_s0 != 9)<span
+                style="mso-spacerun:yes"
+              >
+              </span
+              >change(last_s0+s0,250,200,0);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>// else
+              change(0,250,200,0);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >change(last_s0+s0,xs0,ys0,0);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>} else if(last_s0 != s0
+              &amp;&amp; last_s0 == 9) {<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>if(initial) start_time =
+              millis();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>//
+              draw_num(250,200,s0);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>if(last_s1 != 5) {<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >change(last_s1+s1,xs1,ys1,1);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>change(0,xs0,ys0,0);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>} else {<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>change(-1,xs1,ys1,1);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>change(0,xs0,ys0,0);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>}<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>} else {<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>initial = 1;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>last_s0 = s0;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>last_s1 = s1;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_num(xs1,ys1,s1);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>draw_num(xs0,ys0,s0);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>}<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>/*draw minutes*/<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>m = minute();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>push();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >translate(width/2,height/2);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >rotate(-90+(m+s/60)*6);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>stroke(223, 205, 147);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>strokeWeight(5);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>line(190,0,290,0);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>noStroke();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(231, 91, 102);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>circle(240,0,7);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>circle(290,0,7);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>pop();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>/*draw hour*/<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>if(hour()&lt;=12) h =
+              hour();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>else h = hour()%12;<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>push();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >translate(width/2,height/2);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >rotate(-90+(h+m/60+s/3600)*30);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>stroke(223, 205, 147);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>strokeWeight(5);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>line(180,0,230,0);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>noStroke();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(32, 13, 15);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>circle(230,0,7);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>pop();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US">}</span></p>
+        </div>
       </blockquote>
     </div>
-      </body>
+  </body>
 </html>
