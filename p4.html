@@ -70,16 +70,19 @@
                 height="800px"
               src="https://cdn.glitch.com/fbc2a06c-a0ad-427a-ae11-00252e4e8f39%2FStories.jpg?v=1601382868347">
         </iframe>
-        Background Story 1 by Haoshu:<br><br>
+        <b>Background Story 1 by Haoshu:</b><br><br>
 Monster<br><br>
 It’s a monster. It terrifies us. It makes our life aberrant. It could be Thanos with his ambition of eliminating half of the life in the universe. It could be a catastrophe causing millions of tragedies. It could also be the COVID-19 that changes our everyday patterns, hurts people and ruins families. <br><br>
 But it is not a portrait of a fierce evil who plays with human life. It is a monster but it is not inevitable. It scares us at the beginning. But after people’s rebounding together with careful researches and works day and night, the monster could just be like what I draw on the canvas—a controlled plush object. <br><br>
       
-        Background Story 2 by Nishra:<br><br>
+        <b>Background Story 2 by Nishra:</b><br><br>
 Meet Anonymous!<br><br>
 They are everyone! They are you and I at some point in our lives!  They are battling for the well being of their mental health. They have anxiety that knots up their mind and ties up their gut; and depression that makes them weak in their knees. They are afraid to face the world that is often too harsh. They are fading from within trying to fit in. They’re Anonymous, because some do not want too recognize them. They’re resting waiting to get back up.<br><br>
         
-        
+        <b>Background Story 3 by Yumeng:</b><br><br>
+I get the inspiration from my favorite book, the Little Prince. He is not in that story, and he comes from my imagination.<br><br>
+Each person is composed of abstract geometric figures in that space, and each person is an independent and unique individual. They have their planet. Just as each of us is unique in reality, the communication between people is like the exploration between stars.<br><br>
+I created this character because I believe that people should respect others' uniqueness while remaining themselves.<br><br>
         
         <!-- 3. write a short description to describe what the work is about -->
       <h1>
@@ -87,38 +90,6 @@ They are everyone! They are you and I at some point in our lives!  They are batt
       </h1>
 
       <p>
-      Here are the 3 design sketches that I brainstormed at the beginning. </p>
-      <p>
-      <iframe 
-              width="834px"
-                height="540px"
-              src="https://cdn.glitch.com/fbc2a06c-a0ad-427a-ae11-00252e4e8f39%2FDigital%20Sandglass.jpg?v=1600701942591">
-        </iframe>The first one is to build 6 digital sandglasses to show the time. The sands in the upper and the lower part of each sandglass represent both a countdown and time, which is fascinating.<br><br>
-
-        <iframe 
-              width="705px"
-                height="486px"
-              src="https://cdn.glitch.com/fbc2a06c-a0ad-427a-ae11-00252e4e8f39%2FLife%20Countdown.jpg?v=1600701927554">
-        </iframe>The second one is simply using different bars to represent the seconds in a minute, minutes in an hour, hours in a day, days in a week, days in a month, months in a year, and years in the total 80 years of life. Notice that it doesn’t mean that one’s life is fixed at 80 years, rather it is just an estimate for most people to let them better feel the time in their lives and the extra year of living could be considered a bonus. <br><br>
-
-        <iframe 
-              width="412px"
-                height="486px"
-              src="https://cdn.glitch.com/fbc2a06c-a0ad-427a-ae11-00252e4e8f39%2FMatch%20Clock.jpg?v=1600701919898">
-        </iframe>The third design is this Match Clock. I finally choose this one for 3 reasons. First, unlike the sandglass that is purely a digitalization of a physical time-representing object, the matches are not used for a clock in the reality.  Second, in contrast to the Life Countdown that is purely abstract rectangles, the matches comes from the concrete real world but move in a digital way. Therefore, the Match Clock is more experimental that blends digital canvas and real world. What’s more, I really want to have a try to use codes achieve the matchsticks’ animations. It seemed challenging but interesting. <br><br>
-
-      </p>
-      <p>
-I started to use 5 sticks to draw each number first. <br><br>
-Then I used Keynote to make a quick animation and see how each stick moves when number changes. The overview animation made by Keynote is shown below.
- <iframe 
-              width="320px"
-                height="346px"
-              src="https://cdn.glitch.com/fbc2a06c-a0ad-427a-ae11-00252e4e8f39%2FNumber%20Keynote.gif?v=1600703141831">
-        </iframe>    </p>   
-<p>
-Finally, I tried to achieve it by codes. I started by coding a function that draws 1 match in a specific coordinate and rotate an angle. Then, I tested it and figured out how to let the specific match move and rotate on canvas. Then, I programmed the function to draw each number by 5 matches. Following, by referring to the Keynote, I programmed the function that changes the parameters of draw-match function for animation. Here with trials and errors, I finally discovered a way to record the start-changing time at the beginning of the animation in a continuous running draw function so that the movement of matches could be controlled by the time. 
-The final creative clock is exactly what I expected. It looks contracted but not simple. The animation also adds a bit of fun to this clock. I really like it!  
       </p>
 
       <!-- 4. reflection -->
@@ -127,12 +98,6 @@ The final creative clock is exactly what I expected. It looks contracted but not
       </h1>
 
       <p>
-        Time, as a dimension that continuously flows in human perception, lends the changes. To measure it, we quantized the time so that in every unit, the time is stalled. Therefore, changes happen between each unit of time, and could be represented by the animations. <br><br>
-        The classic animation showing the change of time could be embodied in an analog clock, with time flowing in the ticking of the second pointer. While in the digital world, this animation can be less restrained and in the way that is hard to be realized in reality. The Match Clock here is an example of the combination of digital and real world to represent the change of time. <br><br>
-        Throughout the coding process, I have learned a lot.<br><br>
-First, I figured out a way to make an animation controlled by the specific time instead of the speed of processor. Since the draw function is continuously running, another variable should be defined as a switch to direct the animation. <br><br>
-Second, I found out that if I used a function outside the draw function to draw something, even if it iterates with time, it won’t be shown on canvas in a real-time. Rather, it is the final result of the iteration that shows on canvas.<br><br>
-Third, after debugging, I noticed that using let to declare a variable will only be used inside the {}. To access a variable in multiple blocks, we may let it at the beginning of the main block or simply as a global variable or to use var to declare.<br><br>
         </p>
 
       <!-- 5. code -->
