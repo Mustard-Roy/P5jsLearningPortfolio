@@ -197,7 +197,1570 @@
         Code
       </h1>
       <blockquote>
-      
+        <div class="WordSection1" style="layout-grid:15.6pt">
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              >//clmtrackr reference: https://github.com/auduno/clmtrackr<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              >let vid, Mask, shape, ctracker, htracker, detector;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">let start;<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">let masknum;<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">let beat;<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">let c;<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">class Virus {<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>constructor() {<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>this.x =
+              random(width);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>this.y =
+              random(height);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>this.size = random(10,
+              30);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>this.speed = 5;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>}<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>move() {<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>this.x +=
+              random(-this.speed, this.speed);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>this.y +=
+              random(-this.speed, this.speed);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>}<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>display() {<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>push();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>if (random([0, 1])) {<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>textSize(this.size);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>text('</span
+            ><span
+              lang="EN-US"
+              style='font-family:"Apple Color Emoji";
+mso-bidi-font-family:"Apple Color Emoji"'
+              >&#129440;</span
+            ><span lang="EN-US">', this.x, this.y);<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>} else {<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(10, 200, 30,
+              random(0, 50));<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>noStroke();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>circle(this.x, this.y,
+              this.size);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>}<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>pop();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>}<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">}<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">function preload() {<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>img =
+              loadImage('Jonathan.png');<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">}<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">function setup() {<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>createCanvas(400,
+              300);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>// initialize 30 virus
+              illustrations<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let cnt = 30;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>V = new Array();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>while (cnt--) {<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>V.push(new Virus());<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>}<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>button =
+              createButton('change');<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>button.position(width -
+              button.width, height - button.height);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>Mask =
+              createGraphics(width, height);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >Mask.ellipseMode(CORNERS);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>shape =
+              createGraphics(width, height);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >shape.ellipseMode(CORNERS);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>vid =
+              createCapture(VIDEO);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>vid.size(width,
+              height);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>vid.hide();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>ctracker = new
+              clm.tracker();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>ctracker.init();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >ctracker.start(vid.elt);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>start = false;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>masknum = 1;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>beat = 0;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>pixelDensity(1);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>textAlign(CENTER);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>angleMode(DEGREES);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">}<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">function drawMask(pos) {<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let x1 = pos[2][0],<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>y1 = pos[41][1],<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>x2 = pos[12][0],<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>y2 = pos[7][1];<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>if (masknum) {<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>Mask.clear();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>Mask.noStroke();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>Mask.fill(c);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>Mask.ellipse(x1, y1, x2,
+              y2);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>Mask.stroke(c);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>Mask.strokeWeight(3);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>Mask.line(pos[1][0],
+              pos[1][1], pos[3][0], pos[3][1]);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>Mask.line(pos[13][0],
+              pos[13][1], pos[11][0], pos[11][1]);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>} else {<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>Mask.clear();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>Mask.fill(c);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>Mask.noStroke();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>Mask.beginShape();<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>Mask.vertex(pos[62][0],
+              pos[62][1]);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>Mask.vertex(pos[2][0],
+              pos[2][1]);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>Mask.vertex(pos[5][0],
+              y2);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>Mask.vertex(pos[9][0],
+              y2);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>Mask.vertex(pos[12][0],
+              pos[12][1]);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>Mask.endShape(CLOSE);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>Mask.stroke(c);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>Mask.strokeWeight(3);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>Mask.line(pos[1][0],
+              pos[1][1], pos[3][0], pos[3][1]);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>Mask.line(pos[13][0],
+              pos[13][1], pos[11][0], pos[11][1]);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>}<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>image(Mask, 0, 0);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">}<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              >// elliptical shape is used to mask the video and demonstrate
+              only the head area<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">function Shape(pos) {<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              ><span style="mso-spacerun:yes"> </span>let x1 = pos[1][0],<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>y1 = pos[33][1],<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>x2 = pos[13][0],<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>y2 = pos[7][1];<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>shape.clear();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>shape.noStroke();<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>shape.fill(0);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>shape.ellipse(x1 - 30, y1
+              - (y2 - y1) / 3 - 30, x2 + 30, y2 + 30);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">}<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">function loading() {<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(10, 100, 200);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>textSize(60);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>text('Loading...', width /
+              2, height / 2);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>c = color(random([0, 1]) ?
+              color(random(0, 200), random(200, 255)) : color(random(69, 79),
+              random(166, 176), random(234, 244), random(200, 255)));<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>button.hide();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">}<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">function noface() {<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(10, 200, 100);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>textSize(60);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>text('Wait for a face',
+              width / 2, height / 2);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>button.hide();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">}<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              >function inEllipse(x, y, x1, x2, y1, y2) {<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let r1 = abs(x1 - x2);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let r2 = abs(y1 - y2);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>if (sq(x - x2) / sq(r1) +
+              sq(y - 2 * y1 + y2) / sq(r2) &lt;= 1) return true;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>else return false;<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">}<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              >function inCircle(x, y, x1, x2, y1, y2) {<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let r = sqrt(sq(x1 - x2) +
+              sq(y1 - y2)) / 2;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let xc = (x1 + x2) /
+              2;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let yc = (y1 + y2) /
+              2;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>if (sq(x - xc) + sq(y -
+              yc) &lt;= sq(r)) return true;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>else return false;<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">}<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">function Beat(pos) {<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let x1_start =
+              int(pos[66][0]);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let y1_start =
+              int(pos[26][1]);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let x1_end =
+              int(pos[25][0]);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let y1_end =
+              int(pos[34][1]);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let x2_start =
+              int(pos[67][0]);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let y2_start =
+              int(pos[67][1]);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let x2_end =
+              int(pos[28][0]);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let y2_end =
+              int(pos[28][1]);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>vid.loadPixels();<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>for (let y = 0; y &lt;
+              height; y++)<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              ><span style="mso-spacerun:yes"> </span>for (let x = 0; x &lt;
+              width; x++) {<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let index = (x + y *
+              width) * 4;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>if (inCircle(x, y,
+              x1_start, x1_end, y1_start, y1_end)) {<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>vid.pixels[index] -=
+              73;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>vid.pixels[index + 1] -=
+              68;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>vid.pixels[index + 2] -=
+              36;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>} else if (inEllipse(x, y,
+              x2_start, x2_end, y2_start, y2_end)) {<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>vid.pixels[index] -=
+              42;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>vid.pixels[index + 1] -=
+              23;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>vid.pixels[index + 2] -=
+              13;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>} else vid.pixels[index +
+              3] = 0;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>}<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>vid.updatePixels();<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>image(vid, 0, 0, width,
+              height);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">}<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US">function draw() {<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >background('rgba(255,255,255,20)');<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>// move background
+              viruses<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>V.forEach(function(v)
+              {<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>v.move();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>v.display()<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>});<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>// change facemask type
+              and color<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              >button.mousePressed(function() {<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>masknum = !masknum;<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>beat++;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>c = color(random([0, 1]) ?
+              color(random(0, 200), random(200, 255)) : color(random(69, 79),
+              random(166, 176), random(234, 244), random(200, 255)));<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>});<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let pos =
+              ctracker.getCurrentPosition();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>if (!pos &amp;&amp;
+              !start) loading();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>else if (!pos &amp;&amp;
+              start) noface();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>else {<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>start = true;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>button.show();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>if (beat &gt;= 4) {<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>push();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(10, 100, 200,
+              200);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>textFont('Impact');<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>textAlign(CENTER);<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>textSize(40);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>text('YOU ARE BEATEN
+              UP\nFOR WEARING A MASK', width / 2, 40);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>pop();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>push();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>fill(10);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>textFont('Arial');<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>textAlign(LEFT);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>textSize(10);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>text('This is
+              exactly\nwhat happened to\nsome Asians\nat the beginning of\nthe
+              COVID-19\nin western countries.', width - 100, 150);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>image(img, 40, 150, 50,
+              62);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>pop();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>}<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>push();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let ts = ((pos[13][0] +
+              30) - (pos[1][0] - 30)) * 2.5;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>textSize(ts);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>text('</span
+            ><span
+              lang="EN-US"
+              style='font-family:"Apple Color Emoji";
+mso-bidi-font-family:"Apple Color Emoji"'
+              >&#129404;</span
+            ><span lang="EN-US"
+              >', pos[7][0], pos[7][1] + pos[7][1] - pos[37][1] + 60 + ts /
+              2);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>pop();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>image(vid, 0, 0, width,
+              height);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span><o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>if (beat &gt;= 4)
+              Beat(pos);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>drawMask(pos);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>Shape(pos);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>vid.mask(shape);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"><o:p>&nbsp;</o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>if (beat &lt; 4) {<o:p
+              ></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>push();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let ts2 = ((pos[13][0] +
+              30) - (pos[1][0] - 30)) * 1.1;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>textSize(ts2);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>translate((pos[7][0] +
+              pos[0][0]) / 2, pos[41][1]);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>rotate(-20);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>text('</span
+            ><span
+              lang="EN-US"
+              style='font-family:"Apple Color Emoji";
+mso-bidi-font-family:"Apple Color Emoji"'
+              >&#129506;</span
+            ><span lang="EN-US">', 0, 0);<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>pop();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>} else {<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>if (random([0, 1, 1, 1, 1,
+              1, 1, 1, 1])) {<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>push();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>let ts2 = ((pos[13][0] +
+              30) - (pos[1][0] - 30)) * 0.7;<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>textSize(ts2);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>translate((pos[7][0] +
+              pos[0][0]) / 2 - ts2 * 0.2, pos[41][1] - ts2 * 0.2);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>rotate(10);<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>text('</span
+            ><span
+              lang="EN-US"
+              style='font-family:"Apple Color Emoji";
+mso-bidi-font-family:"Apple Color Emoji"'
+              >&#128165;</span
+            ><span lang="EN-US">', 0, 0);<o:p></o:p></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>pop();<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span
+              ><span style="mso-spacerun:yes"> </span>}<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>}<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal">
+            <span lang="EN-US"
+              ><span style="mso-spacerun:yes"> </span>}<o:p></o:p
+            ></span>
+          </p>
+
+          <p class="MsoNormal"><span lang="EN-US">}</span></p>
+        </div>
       </blockquote>
     </div>
   </body>
