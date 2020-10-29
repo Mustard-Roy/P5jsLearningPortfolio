@@ -37,8 +37,10 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(400, 300);
-
+  var HTMLcanvas = document.getElementById("my-canvas");
+    var HTMLcontext = HTMLcanvas.getContext("2d");
+  var canvas1 = createCanvas(400, 300);
+  HTMLcontext.drawImage(canvas1, 0, 0);
   // initialize 30 virus illustrations
   let cnt = 30;
   V = new Array();
