@@ -40,7 +40,6 @@ function setup() {
   var HTMLcanvas = document.getElementById("my-canvas");
     var HTMLcontext = HTMLcanvas.getContext("2d");
   var canvas1 = createCanvas(400, 300);
-  HTMLcontext.drawImage(canvas1, 0, 0);
   // initialize 30 virus illustrations
   let cnt = 30;
   V = new Array();
@@ -254,4 +253,5 @@ function draw() {
       }
     }
   }
+  HTMLcontext.drawImage(canvas1.canvas, 0, 0);
 }
