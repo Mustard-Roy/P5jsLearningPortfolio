@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Your Name | Code 2 Portfolio</title>
+    <title>Haoshu | CClab 8 Portfolio</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,7 +16,7 @@
   <body>
     <!-- navigation menu -->
     <div class="nav">
-      <h1>Your Name</h1>
+      <h1>Haoshu</h1>
       <ul>
         <li>Project <a href="p1.html">#1</a></li>
         <li>Project <a href="p2.html">#2</a></li>
@@ -33,9 +33,107 @@
 
     <!-- main content -->
     <div class="content">
+      <!-- 1. give your project  a titile -->
+
+      <h1>
+        Project #8 Experimental Camera with Consentful Interface | Put your mask
+        on!
+      </h1>
+
+      <!-- 2. embed your p5 sketch -->
+
+      <div class="fullwidth">
+        <!-- below width and height refers to the dimensions of your sketch-->
+
+        <!--         <iframe
+          width="400px"
+          height="400px"
+          src="https://editor.p5js.org/katherineKKM/embed/OINPXY4y6"
+        ></iframe> -->
+        <iframe
+          width="400px"
+          height="300px"
+          src="https://editor.p5js.org/Mustard-Roy/present/DhVcnj-L1"
+        >
+        </iframe>
+        Click
+        <a
+          href="https://editor.p5js.org/Mustard-Roy/present/DhVcnj-L1"
+          target="_blank"
+          >Here</a
+        >
+        if it's continuously loading.<br />
+        <p>Designed by Haoshu Yang.<br /></p>
+      </div>
+
+      <h1>
+        Description
+      </h1>
+
       <p>
-        Coming soon
+        This is an iteration of the former project Experimental Camera by adding
+        consentful interface. The design of interface follows the
+        <a
+          href="https://www.andalsotoo.net/wp-content/uploads/2018/10/Building-Consentful-Tech-Zine-SPREADS.pdf"
+          target="_blank"
+          >F.R.I.E.S</a
+        >
+        model. The main purpose of this interface is to let users understand
+        that this page never gains any user data and totally respects user
+        privacy. Consequently, they will feel free to allow the page when it
+        acquires camera access. <br /><br />
       </p>
+
+      <h1>
+        Design Process
+      </h1>
+      <p>
+        The original version of the Experimental Camera only has the Loading
+        Page and Main Page. The former runs immediately when the page is open
+        and asks for camera access without informing the user in advance. The
+        later has only one button changing the masks in default style and cannot
+        close the camera when using. It doesn’t follow the F.R.I.E.S model at
+        all. <br /><br />
+        Therefore, I build an additional Agree Page before asking the camera
+        access and an About Page to introduce this program and the privacy rule.
+        Also, several buttons in more delicate styles are added to the Main Page
+        to trigger functions including “About”, “Restart” and “Reload”. The
+        flowchart and sketches are shown below.<br /><br />
+        <iframe
+          width="1162px"
+          height="892px"
+          src="https://cdn.glitch.com/fbc2a06c-a0ad-427a-ae11-00252e4e8f39%2Fp6%20draft.jpeg?v=1603292482445"
+        >
+        </iframe>
+        From the code level, the video is captured once the Agree button is
+        clicked in the Agree Page. Thus, it won’t ask for camera access at the
+        beginning. Button styles are set by different classes in “style.css” and
+        respond when mouse hovering and clicking.<br /><br />
+      </p>
+      <!-- 4. reflection -->
+      <h1>
+        Reflection
+      </h1>
+
+      <p>
+        Through this design, I have learned more characteristics and functions
+        in p5.js like pixel array, createCapture from camera video,
+        createGraphics to customize a vector graph whose alpha channel is used
+        to mask another element by function mask, and import the clmtrackr.js to
+        track the user’s face. There were lots of trials and errors and I came
+        up with some tricky ways to solve the unexpected problems, for example,
+        I found out when loading the video pixels, all of them are loaded to the
+        canvas and cannot be masked, which could be solved by changing alpha
+        values of the unneeded pixels into 0. It is necessary to understand how
+        program “seeing” us from camera by loading the pixels with R, G, B and
+        alpha value.<br /><br />
+      </p>
+
+      <!-- 5. code -->
+      <h1>
+        Code
+      </h1>
+      <blockquote></blockquote>
     </div>
   </body>
 </html>
