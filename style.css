@@ -239,13 +239,13 @@ canvas {
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
+/*   padding: 0 4px; */
 }
 
-/* Create three equal columns that sits next to each other */
+/* Create four equal columns that sits next to each other */
 .column {
-  flex: 25%;
-  max-width: 25%;
+  flex: 33.3%;
+  max-width: 33.3%;
   height: auto;
   padding: 0 4px;
 }
@@ -260,8 +260,8 @@ canvas {
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
-    flex: 50%;
-    max-width: 50%;
+    flex: 66.6%;
+    max-width: 66.6%;
     height: auto;
   }
 }
