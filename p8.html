@@ -15,21 +15,35 @@
 
   <body>
     <!-- navigation menu -->
-    <div class="nav">
-      <h1><a href="index.html">Haoshu</a></h1>
-      <ul>
-        <li>Project <a href="p1.html">#1</a></li>
-        <li>Project <a href="p2.html">#2</a></li>
-        <li>Project <a href="p3.html">#3</a></li>
-        <li>Project <a href="p4.html">#4</a></li>
-        <li>Project <a href="p5.html">#5</a></li>
-        <li>Project <a href="p6.html">#6</a></li>
-        <li>Project <a href="p7.html">#7</a></li>
-        <li>Project <a href="p8.html">#8</a></li>
-        <li>Project <a href="p9.html">#9</a></li>
-        <li>Project <a href="p10.html">#10</a></li>
-      </ul>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="index.html" style="font-size: 18pt;">Haoshu</a>
+      <a href="p1.html">Project&nbsp#1</a>
+      <a href="p2.html">Project&nbsp#2</a>
+      <a href="p3.html">Project&nbsp#3</a>
+      <a href="p4.html">Project&nbsp#4</a>
+      <a href="p5.html">Project&nbsp#5</a>
+      <a href="p6.html">Project&nbsp#6</a>
+      <a href="p7.html">Project&nbsp#7</a>
+      <a href="p8.html">Project&nbsp#8</a>
+      <a href="p9.html">Project&nbsp#9</a>
+      <a href="p10.html">Project&nbsp#10</a>
     </div>
+    <span
+      style="font-size:30px;cursor:pointer;color: #1B1F7D"
+      onclick="openNav()"
+      >&#9776; Menu</span
+    >
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
 
     <!-- main content -->
     <div class="content">
@@ -85,14 +99,8 @@
         Also, several buttons in more delicate styles are added to the Main Page
         to trigger functions including “About”, “Restart” and “Reload”. The
         flowchart and sketches are shown below.<br /><br />
-        <iframe
-          width="1920px"
-          height="1080px"
-          src="https://cdn.glitch.com/fbc2a06c-a0ad-427a-ae11-00252e4e8f39%2FConcentful%20Cameara%20Flowchart.png?v=1605684696672"
-        >
-        </iframe>
         <p>
-          <image src='https://cdn.glitch.com/fbc2a06c-a0ad-427a-ae11-00252e4e8f39%2FConcentful%20Cameara%20Flowchart.png?v=1605684696672'></image>
+          <image src="https://cdn.glitch.com/fbc2a06c-a0ad-427a-ae11-00252e4e8f39%2FConcentful%20Cameara%20Flowchart.png?v=1605684696672"></image>
       </p>From the code level, the video is captured once the Agree button is
         clicked in the Agree Page. Thus, it won’t ask for camera access at the
         beginning. Button styles are set by different classes in “style.css” and
