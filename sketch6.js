@@ -32,7 +32,7 @@ class Virus {
 }
 
 function preload() {
-  img = loadImage("Jonathan.png");
+  img = loadImage("https://cdn.glitch.com/fbc2a06c-a0ad-427a-ae11-00252e4e8f39%2FJonathan.png?v=1605801114051");
 }
 
 function setup() {
