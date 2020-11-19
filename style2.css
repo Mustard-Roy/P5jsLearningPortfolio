@@ -5,3 +5,52 @@ html, body {
 canvas {
   display: block;
 }
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #507FE5;
+  border-radius: 10px;
+}
+
+.button1:hover {
+  background-color: #507FE5;
+  color: white;
+}
+
+.button2 {
+  padding: 5px 10px;
+  font-size: 10px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #507FE5;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px #131B2F;
+}
+
+.button2:hover {
+  background-color: #4066B7;
+}
+
+.button2:active {
+  background-color: #4066B7;
+  box-shadow: 0 2px #040509;
+  transform: translateY(2px);
+}
+
+.button3 {
+  background-color: white;
+  border: 1px solid #B4AEB6;
+  border-radius: 2px;
+  color: black;
+  font-size: 8px;
+  cursor: pointer;
+}
+
+.button3:hover {
+  background-color: #507FE5;
+  color: white;
+}
