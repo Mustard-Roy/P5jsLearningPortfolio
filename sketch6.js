@@ -1,4 +1,3 @@
-//clmtrackr reference: https://github.com/auduno/clmtrackr
 let vid, Mask, shape, ctracker, htracker, detector;
 let start;
 let masknum;
@@ -37,7 +36,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(400, 300);
+  let mycanvas = createCanvas(400, 300);
+  myCanvas.parent("canvasContainer");
   // initialize 30 virus illustrations
   let cnt = 30;
   V = new Array();
@@ -251,5 +251,4 @@ function draw() {
       }
     }
   }
-  HTMLcontext.drawImage(canvas1.canvas, 0, 0);
 }
