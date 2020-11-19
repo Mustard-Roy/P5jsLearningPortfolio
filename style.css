@@ -60,7 +60,7 @@ p {
 
 .nav {
   padding: 2%;
-  width: 26%;
+  width: 10%;
   height: 100%;
   display: inline-block;
   float: left;
@@ -69,7 +69,7 @@ p {
 
 .content {
   padding: 2%;
-  width: 50%;
+  width: 80%;
   display: inline-block;
   float: left;
   /*   background-color:yellow; */
@@ -242,10 +242,10 @@ canvas {
   padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
+/* Create three equal columns that sits next to each other */
 .column {
-  flex: 25%;
-  max-width: 25%;
+  flex: 33.3%;
+  max-width: 33.6%;
   height: auto;
   padding: 0 4px;
 }
@@ -260,8 +260,8 @@ canvas {
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
-    flex: 50%;
-    max-width: 50%;
+    flex: 66.6%;
+    max-width: 66.6%;
     height: auto;
   }
 }
