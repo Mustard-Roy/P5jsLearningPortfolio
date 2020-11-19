@@ -21,7 +21,7 @@ class Virus {
     push();
     if (random([0, 1])) {
       textSize(this.size);
-      text('🦠', this.x, this.y);
+      text("🦠", this.x, this.y);
     } else {
       fill(10, 200, 30, random(0, 50));
       noStroke();
@@ -32,12 +32,11 @@ class Virus {
 }
 
 function preload() {
-  img = loadImage('Jonathan.png');
+  img = loadImage("Jonathan.png");
 }
 
 function setup() {
-  let mycanvas = createCanvas(400, 300);
-  myCanvas.parent("canvasContainer");
+  createCanvas(400, 300);
   // initialize 30 virus illustrations
   let cnt = 30;
   V = new Array();
@@ -45,7 +44,7 @@ function setup() {
     V.push(new Virus());
   }
 
-  button = createButton('change');
+  button = createButton("change");
   button.position(width - button.width, height - button.height);
 
   Mask = createGraphics(width, height);
@@ -84,7 +83,6 @@ function drawMask(pos) {
     Mask.strokeWeight(3);
     Mask.line(pos[1][0], pos[1][1], pos[3][0], pos[3][1]);
     Mask.line(pos[13][0], pos[13][1], pos[11][0], pos[11][1]);
-
   } else {
     Mask.clear();
     Mask.fill(c);
@@ -120,15 +118,24 @@ function Shape(pos) {
 function loading() {
   fill(10, 100, 200);
   textSize(60);
-  text('Loading...', width / 2, height / 2);
-  c = color(random([0, 1]) ? color(random(0, 200), random(200, 255)) : color(random(69, 79), random(166, 176), random(234, 244), random(200, 255)));
+  text("Loading...", width / 2, height / 2);
+  c = color(
+    random([0, 1])
+      ? color(random(0, 200), random(200, 255))
+      : color(
+          random(69, 79),
+          random(166, 176),
+          random(234, 244),
+          random(200, 255)
+        )
+  );
   button.hide();
 }
 
 function noface() {
   fill(10, 200, 100);
   textSize(60);
-  text('Wait for a face', width / 2, height / 2);
+  text("Wait for a face", width / 2, height / 2);
   button.hide();
 }
 
@@ -156,7 +163,7 @@ function Beat(pos) {
   let y2_start = int(pos[67][1]);
   let x2_end = int(pos[28][0]);
   let y2_end = int(pos[28][1]);
-  
+
   vid.loadPixels();
   for (let y = 0; y < height; y++)
     for (let x = 0; x < width; x++) {
@@ -172,58 +179,71 @@ function Beat(pos) {
       } else vid.pixels[index + 3] = 0;
     }
   vid.updatePixels();
-  
+
   image(vid, 0, 0, width, height);
 }
 
 function draw() {
-  background('rgba(255,255,255,20)');
+  background("rgba(255,255,255,20)");
   // move background viruses
   V.forEach(function(v) {
     v.move();
-    v.display()
+    v.display();
   });
   // change facemask type and color
   button.mousePressed(function() {
     masknum = !masknum;
     beat++;
-    c = color(random([0, 1]) ? color(random(0, 200), random(200, 255)) : color(random(69, 79), random(166, 176), random(234, 244), random(200, 255)));
+    c = color(
+      random([0, 1])
+        ? color(random(0, 200), random(200, 255))
+        : color(
+            random(69, 79),
+            random(166, 176),
+            random(234, 244),
+            random(200, 255)
+          )
+    );
   });
-  
+
   let pos = ctracker.getCurrentPosition();
   if (!pos && !start) loading();
   else if (!pos && start) noface();
   else {
     start = true;
     button.show();
-    
+
     if (beat >= 4) {
       push();
       fill(10, 100, 200, 200);
-      textFont('Impact');
+      textFont("Impact");
       textAlign(CENTER);
       textSize(40);
-      text('YOU ARE BEATEN UP\nFOR WEARING A MASK', width / 2, 40);
+      text("YOU ARE BEATEN UP\nFOR WEARING A MASK", width / 2, 40);
       pop();
 
       push();
       fill(10);
-      textFont('Arial');
+      textFont("Arial");
       textAlign(LEFT);
       textSize(10);
-      text('This is exactly\nwhat happened to\nsome Asians\nat the beginning of\nthe COVID-19\nin western countries.', width - 100, 150);
+      text(
+        "This is exactly\nwhat happened to\nsome Asians\nat the beginning of\nthe COVID-19\nin western countries.",
+        width - 100,
+        150
+      );
       image(img, 40, 150, 50, 62);
       pop();
     }
 
     push();
-    let ts = ((pos[13][0] + 30) - (pos[1][0] - 30)) * 2.5;
+    let ts = (pos[13][0] + 30 - (pos[1][0] - 30)) * 2.5;
     textSize(ts);
-    text('🥼', pos[7][0], pos[7][1] + pos[7][1] - pos[37][1] + 60 + ts / 2);
+    text("🥼", pos[7][0], pos[7][1] + pos[7][1] - pos[37][1] + 60 + ts / 2);
     pop();
 
     image(vid, 0, 0, width, height);
-    
+
     if (beat >= 4) Beat(pos);
 
     drawMask(pos);
@@ -233,20 +253,23 @@ function draw() {
 
     if (beat < 4) {
       push();
-      let ts2 = ((pos[13][0] + 30) - (pos[1][0] - 30)) * 1.1;
+      let ts2 = (pos[13][0] + 30 - (pos[1][0] - 30)) * 1.1;
       textSize(ts2);
       translate((pos[7][0] + pos[0][0]) / 2, pos[41][1]);
       rotate(-20);
-      text('🧢', 0, 0);
+      text("🧢", 0, 0);
       pop();
     } else {
       if (random([0, 1, 1, 1, 1, 1, 1, 1, 1])) {
         push();
-        let ts2 = ((pos[13][0] + 30) - (pos[1][0] - 30)) * 0.7;
+        let ts2 = (pos[13][0] + 30 - (pos[1][0] - 30)) * 0.7;
         textSize(ts2);
-        translate((pos[7][0] + pos[0][0]) / 2 - ts2 * 0.2, pos[41][1] - ts2 * 0.2);
+        translate(
+          (pos[7][0] + pos[0][0]) / 2 - ts2 * 0.2,
+          pos[41][1] - ts2 * 0.2
+        );
         rotate(10);
-        text('💥', 0, 0);
+        text("💥", 0, 0);
         pop();
       }
     }
