@@ -236,10 +236,3 @@ body .gist .gist-meta {
   height: 300px;
   border: 1px black solid;
 }
-
-#canvasContainer{
-  width: 100%;
-  height: 100%;
-  background-color:blue;
-  overflow: hidden;
-}
