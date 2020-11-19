@@ -14,7 +14,7 @@
   </head>
   <body>
     <!-- navigation menu -->
-    <div class="nav">
+<!--     <div class="nav">
       <h1>Haoshu</h1>
       <li>Project <a href="p1.html">#1</a></li>
       <li>Project <a href="p2.html">#2</a></li>
@@ -26,8 +26,31 @@
       <li>Project <a href="p8.html">#8</a></li>
       <li>Project <a href="p9.html">#9</a></li>
       <li>Project <a href="p10.html">#10</a></li>
-    </div>
+    </div> -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <li>Project <a href="p1.html">#1</a></li>
+      <li>Project <a href="p2.html">#2</a></li>
+      <li>Project <a href="p3.html">#3</a></li>
+      <li>Project <a href="p4.html">#4</a></li>
+      <li>Project <a href="p5.html">#5</a></li>
+      <li>Project <a href="p6.html">#6</a></li>
+      <li>Project <a href="p7.html">#7</a></li>
+      <li>Project <a href="p8.html">#8</a></li>
+      <li>Project <a href="p9.html">#9</a></li>
+      <li>Project <a href="p10.html">#10</a></li>
+</div>
+    <span onclick="openNav()">open</span>
+    <script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
 
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+    <div id="main">
     <!-- main content -->
     <div class="content">
       <h1>
@@ -59,6 +82,7 @@
           />
         </div>
       </div>
+    </div>
     </div>
   </body>
 </html>
