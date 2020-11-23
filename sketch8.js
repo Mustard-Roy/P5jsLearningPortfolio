@@ -24,6 +24,14 @@ function setup() {
   while (cnt--) {
     V.push(new Virus());
   }
+  
+  let dnum = 100;
+  a = [];
+  while (dnum--) {
+    a.push(new Dots());
+  }
+  angleMode(DEGREES);
+  s = jump / 2;
 
   button_ag = createButton('Agree and Continue');
   button_ag.position(width / 2 - button_ag.width / 2, 250);
@@ -81,9 +89,15 @@ function setup() {
 }
 
 function noface() {
-  fill(10, 200, 100);
-  textSize(60);
-  text('Wait for a face', width / 2, height / 2);
+  // fill(10, 200, 100);
+  // textSize(60);
+  // text('Wait for a face', width / 2, height / 2);
+  textFont('Arial');
+  fill(63, 129, 236);
+  textSize(20);
+  text('Wait for a face',width/2,height/2);
+  r = 70;
+  loading_anima();
   button_ch.hide();
   button_re.hide();
   button_res.hide();
