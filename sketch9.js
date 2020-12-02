@@ -10,10 +10,10 @@ function setup() {
     textAlign(CENTER);
     textSize(ts);
     fill(0);
-    text('Click to see the data of\n\nDAILY LAUGHTERS\n\nin 7 days', width / 2 + 1, height / 2 - 70 + 2);
+    text('Click to see the data of\n\nDAILY LAUGHTER\n\nin 7 days', width / 2 + 1, height / 2 - 70 + 2);
     fill(255);
     textSize(ts);
-    text('Click to see the data of\n\nDAILY LAUGHTERS\n\nin 7 days', width / 2, height / 2 - 70);
+    text('Click to see the data of\n\nDAILY LAUGHTER\n\nin 7 days', width / 2, height / 2 - 70);
   }, 500);
   I2 = setInterval(function() {
     bkg();
