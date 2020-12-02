@@ -1,0 +1,453 @@
+{
+    "Day1": [
+        {
+            "Date": "11/23/20",
+            "Time": "13:25",
+            "Level": "8",
+            "Type": "Online",
+            "State": "Alone"
+        },
+        {
+            "Date": "11/23/20",
+            "Time": "14:25",
+            "Level": "5",
+            "Type": "Offline",
+            "State": "Alone"
+        },
+        {
+            "Date": "11/23/20",
+            "Time": "18:35",
+            "Level": "6",
+            "Type": "Offline",
+            "State": "Alone"
+        },
+        {
+            "Date": "11/23/20",
+            "Time": "19:53",
+            "Level": "3",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/23/20",
+            "Time": "20:43",
+            "Level": "6",
+            "Type": "Online",
+            "State": "Alone"
+        },
+        {
+            "Date": "11/23/20",
+            "Time": "20:54",
+            "Level": "7",
+            "Type": "Online",
+            "State": "Alone"
+        }
+    ],
+    "Day2": [
+        {
+            "Date": "11/24/20",
+            "Time": "15:21",
+            "Level": "3",
+            "Type": "Online",
+            "State": "Alone"
+        },
+        {
+            "Date": "11/24/20",
+            "Time": "23:56",
+            "Level": "4",
+            "Type": "Online",
+            "State": "Alone"
+        }
+    ],
+    "Day3": [
+        {
+            "Date": "11/25/20",
+            "Time": "0:38",
+            "Level": "1",
+            "Type": "Online",
+            "State": "Alone"
+        },
+        {
+            "Date": "11/25/20",
+            "Time": "1:05",
+            "Level": "3",
+            "Type": "Online",
+            "State": "Alone"
+        },
+        {
+            "Date": "11/25/20",
+            "Time": "23:32",
+            "Level": "3",
+            "Type": "Online",
+            "State": "Alone"
+        }
+    ],
+    "Day4": [
+        {
+            "Date": "11/26/20",
+            "Time": "16:50",
+            "Level": "1",
+            "Type": "Offline",
+            "State": "Alone"
+        },
+        {
+            "Date": "11/26/20",
+            "Time": "18:15",
+            "Level": "3",
+            "Type": "Online",
+            "State": "Together"
+        },
+        {
+            "Date": "11/26/20",
+            "Time": "23:18",
+            "Level": "3",
+            "Type": "Online",
+            "State": "Alone"
+        }
+    ],
+    "Day5": [
+        {
+            "Day": "Day5",
+            "Date": "11/27/20",
+            "Time": "1:32",
+            "Level": "4",
+            "Type": "Online",
+            "State": "Alone"
+        },
+        {
+            "Day": "Day5",
+            "Date": "11/27/20",
+            "Time": "16:02",
+            "Level": "1",
+            "Type": "Offline",
+            "State": "Alone"
+        },
+        {
+            "Day": "Day5",
+            "Date": "11/27/20",
+            "Time": "17:23",
+            "Level": "2",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Day": "Day5",
+            "Date": "11/27/20",
+            "Time": "17:28",
+            "Level": "3",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Day": "Day5",
+            "Date": "11/27/20",
+            "Time": "17:36",
+            "Level": "4",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Day": "Day5",
+            "Date": "11/27/20",
+            "Time": "17:44",
+            "Level": "4",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Day": "Day5",
+            "Date": "11/27/20",
+            "Time": "20:42",
+            "Level": "4",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Day": "Day5",
+            "Date": "11/27/20",
+            "Time": "20:56",
+            "Level": "4",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Day": "Day5",
+            "Date": "11/27/20",
+            "Time": "21:13",
+            "Level": "6",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Day": "Day5",
+            "Date": "11/27/20",
+            "Time": "23:23",
+            "Level": "5",
+            "Type": "Offline",
+            "State": "Together"
+        }
+    ],
+    "Day6": [
+        {
+            "Date": "11/28/20",
+            "Time": "22:13",
+            "Level": "5",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "0:11",
+            "Level": "6",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "0:20",
+            "Level": "6",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "0:30",
+            "Level": "7",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "0:40",
+            "Level": "6",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "0:50",
+            "Level": "8",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "1:00",
+            "Level": "6",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "1:10",
+            "Level": "8",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "1:20",
+            "Level": "8",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "1:30",
+            "Level": "6",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "1:40",
+            "Level": "8",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "1:50",
+            "Level": "8",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "2:00",
+            "Level": "6",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "2:10",
+            "Level": "5",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "2:20",
+            "Level": "6",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "2:30",
+            "Level": "8",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "2:40",
+            "Level": "5",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "2:50",
+            "Level": "8",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "3:00",
+            "Level": "6",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "3:10",
+            "Level": "6",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "3:20",
+            "Level": "7",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "3:30",
+            "Level": "7",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "3:40",
+            "Level": "8",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "3:50",
+            "Level": "7",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "4:00",
+            "Level": "7",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "4:10",
+            "Level": "5",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "4:20",
+            "Level": "5",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "4:30",
+            "Level": "6",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "4:50",
+            "Level": "4",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "5:20",
+            "Level": "5",
+            "Type": "Offline",
+            "State": "Together"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "6:10",
+            "Level": "2",
+            "Type": "Offline",
+            "State": "Alone"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "6:13",
+            "Level": "2",
+            "Type": "Offline",
+            "State": "Alone"
+        },
+        {
+            "Date": "11/28/20",
+            "Time": "23:07",
+            "Level": "3",
+            "Type": "Online",
+            "State": "Alone"
+        }
+    ],
+    "Day7": [
+        {
+            "Date": "11/29/20",
+            "Time": "18:18",
+            "Level": "2",
+            "Type": "Online",
+            "State": "Alone"
+        },
+        {
+            "Date": "11/29/20",
+            "Time": "18:19",
+            "Level": "3",
+            "Type": "Online",
+            "State": "Alone"
+        },
+        {
+            "Date": "11/29/20",
+            "Time": "21:32",
+            "Level": "7",
+            "Type": "Online",
+            "State": "Together"
+        },
+        {
+            "Date": "11/29/20",
+            "Time": "22:10",
+            "Level": "5",
+            "Type": "Online",
+            "State": "Together"
+        }
+    ]
+}
