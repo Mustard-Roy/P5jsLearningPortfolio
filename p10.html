@@ -47,9 +47,129 @@
 
     <!-- main content -->
     <div class="content">
+      <!-- 1. give your project  a titile -->
+
+      <h1>
+        Project #10 Translation Device | Apple Global Suppliers
+      </h1>
+
+      <!-- 2. embed your p5 sketch -->
+
+      <div class="fullwidth">
+        <!-- below width and height refers to the dimensions of your sketch-->
+
+        <!--         <iframe
+          width="400px"
+          height="400px"
+          src="https://editor.p5js.org/katherineKKM/embed/OINPXY4y6"
+        ></iframe> -->
+        <iframe
+          width="1280px"
+          height="720px"
+          src="https://editor.p5js.org/Mustard-Roy/embed/rV7UYB1B3"
+        >
+        </iframe>
+        <p>
+          Designed by Haoshu Yang.
+        </p>
+      </div>
+
+      <!-- 3. write a short description to describe what the work is about -->
+      <h1>
+        Description and Design Process
+      </h1>
+
       <p>
-        Coming soon
+        Every year, Apple’s fall event catches attention of millions of people
+        across the world. The newly released products become hot topics of the
+        tech media coverage as well as the next-year gossip. Whether people talk
+        about the iPhone, iPad, Mac, Apple Watch or else, the new features, the
+        more powerful capabilities and the controversial looks always lead to
+        Apple with the word printed on every product’s packing box— ‘Designed by
+        Apple in California’. <br /><br />
+        Apart from Apple in California, people discuss less about the other
+        manufacturing companies behind the product or think about where the
+        manufactures and assemblers are located. “Made in China!”, some may say
+        without a hesitation. But is it true? As Fred P. Hochberg writes in the
+        article “The iPhone Isn’t Made in China—It’s Made Everywhere”—“American
+        audio chips, Korean batteries, Congolese minerals, Japanese cameras,
+        German accelerometers: The iPhone may well be the most truly global
+        product yet.” [1] Hence, I decide to make an animated visualization
+        showing the Apple suppliers across the world. <br /><br />
+        I mainly refer to the Principle 7: Make Data Visible [2] from Data
+        Feminism in designing the visualization. A world map is a good container
+        to show all the suppliers equally across the world and make their labor
+        visible. Below are the three initial concepts of this map. The first one
+        is the animation that shows every company and its name one by one on the
+        map. The second one shows all the suppliers on the map and highlights
+        the mouse pointing ones with their names. The third one categorize the
+        suppliers according to mouse pointing countries instead of the locations
+        considering about the low accuracy of the mouse to the overlapping
+        locations in the global map. Finally, I decide to combine the first and
+        the second draft with special process to solve the mouse low precision
+        problem. <br />
+        <image
+          src="https://cdn.glitch.com/fbc2a06c-a0ad-427a-ae11-00252e4e8f39%2FASDratf.png?v=1608209704237"
+        ></image>
+        The supplier list and retail store list come from Apple.com [3]. The
+        names and the addresses of the top 200 suppliers for fiscal year 2018
+        are listed in a PDF file and the addresses of all the Apple retail
+        stores can be searched in the website. Next, I manage to transfer the
+        data from PDF to an Excel file. Then, the latitude and longitude of each
+        location are got from Map services and api, including Google Map
+        Geocoding API [4] and Baidu Map LBS API [5]. Then, the names, countries
+        and longitudes and latitudes are stored in a CSV file and loaded by
+        p5.js to complete the animation and data visualization. The base map is
+        provided by Mapbox with Mapbox static images API [6]. Last, I edit the
+        speeches of previous Apple events and the music, WWW Is A Thing by DJ
+        Quads, as the back ground music to enhance the experience. <br /><br />
+        [1] Hochberg, Fred P. “The iPhone Isn't Made in China-It's Made
+        Everywhere.” The Wall Street Journal, Dow Jones & Company, 31 Jan. 2020,
+        www.wsj.com/articles/the-iphone-isnt-made-in-chinaits-made-everywhere-11580485139.
+        <br />
+        [2] D'Ignazio, Catherine, and Lauren Klein. “7. Show Your Work · Data
+        Feminism.” Data Feminism, The MIT Press, 16 Mar. 2020,
+        data-feminism.mitpress.mit.edu/pub/0vgzaln4/release/2. <br />
+        [3] Apple, Inc.. “Apple Supplier Responsibility 2019 Supplier List.”
+        Apple, 2019,
+        www.apple.com/supplier-responsibility/pdf/Apple-Supplier-List.pdf.
+        <br />
+        [4] Google, Inc.. “Web Services: Geocoding API” Google Developers, 2020,
+        developers.google.com/maps/documentation/geocoding/start. <br />
+        [5] Baidu, Inc.. “逆地理编码 百度地图API SDK.” 百度地图开放平台,
+        lbsyun.baidu.com/index.php?title=webapi%2Fguide%2Fwebservice-geocoding.
+        <br />
+        [6] Mapbox, Inc.. “Static Images API manual doc.” Mapbox, 2020,
+        docs.mapbox.com/api/maps/static-images/. <br />
       </p>
+      <!-- 4. reflection -->
+      <h1>
+        Reflection
+      </h1>
+
+      <p>
+        From Apple’s supplier list PDF file, we see a 33-page table of 812
+        locations of the top 200 suppliers in alphabetical order. With a quick
+        glance, we may only notice the huge amount of factories in China, Japan,
+        and United States, ignoring the others. Therefore, to better make all
+        the suppliers’ effort visible, I use red circle to highlight their
+        locations so that the solitary companies are revealed, say,
+        STMicroelectronics N.V.’s branch in Malta that locates at the center of
+        Mediterranean.<br /><br />
+        So, I hope this map could give people a more comprehensive understanding
+        of how the daily smartphones on their hands are manufactured. Instead of
+        saying that an iPhone is designed from Apple in California and made in
+        China, it is the product comes from the global efforts, from the people
+        in different races and different places.
+      </p>
+
+      <!-- 5. code -->
+<!--       <h1>
+        Code
+      </h1>
+      <blockquote>
+        <iframe height="800px" src="sketch9.js"> </iframe>
+      </blockquote> -->
     </div>
   </body>
 </html>
