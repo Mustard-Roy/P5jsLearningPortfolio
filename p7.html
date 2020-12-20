@@ -46,22 +46,81 @@
     </script>
 
     <!-- main content -->
-
     <div class="content">
-      <p>
-        Under development!
-      </p>
+      <!-- 1. give your project  a titile -->
 
-      <div class="fullwidth">
-        <iframe
+      <h1>
+        Project #7 Bitmap Game | A Day with Tech
+      </h1>
+
+      <!-- 2. embed your p5 sketch -->
+<iframe
           width="600px"
           height="400px"
-          src="https://editor.p5js.org/Mustard-Roy/present/SP_7FG9B7"
+          src="https://editor.p5js.org/Mustard-Roy/embed/SP_7FG9B7"
         >
         </iframe>
-        Alpha version<br />
+      <div class="fullwidth">
         <p>Designed by Haoshu Yang.<br /></p>
       </div>
+
+      <h1>
+        Proposal
+      </h1>
+
+      <p>
+        The technological developments have led to the generation of negative
+        effects. According to Fuzzy Logic Modelling Of The Impact of Using
+        Technology On Anxiety And Aggression Levels Of Students, extended and
+        uncontrolled use of technology inevitably cause psychological, physical
+        and behavioral disorders. <br /><br />
+        In order to help more people realize how they rely on the technology at
+        hand in their daily life that may bring out increasing tech anxiety, I
+        develop this game to simulate a particular day’s life as a college
+        student. <br /><br />
+        The player firstly gets up at home in the morning and buys breakfast.
+        Then, he drives to school along the road. Next, he takes a class at
+        school and has meal from the food stalls near the school. Finally, he
+        goes back home, has some entertainment and goes to sleep. In such 4
+        scenes including home in the morning, road, school and home at night,
+        player collects coins and answers the questions about whether they tend
+        to use the technology or not in a certain circumstance. At the end of
+        the day, a score from previous answers is shown and the game tells you
+        how you depend on the technology and how you are likely to be tech
+        anxious.<br />
+        <image
+          src="https://cdn.glitch.com/fbc2a06c-a0ad-427a-ae11-00252e4e8f39%2FGameStoryboard.png?v=1608499651206"
+        >
+        </image>
+      </p>
+
+      <h1>
+        Reflection
+      </h1>
+      <p>
+        It’s a lot of work!<br /><br />
+        Unlike other game engine, p5.js doesn’t have the specific functions for
+        the game elements like operate animations, collision detection, build-in
+        interface, game nodes, etc. So, I have to figure them out all by myself.
+        <br /><br />
+        Specially, I want to introduce my ways of collecting coins (showing
+        questions) and detecting collision.<br /><br />
+        For collecting coins, each coin is built as an object with parameters
+        including showing status, coordinates, questions, question types,
+        special operations for different answers and new coins to add. Then,
+        when the player ‘intersects’ with the coin, questions, interfaces and
+        following operations are shown based on those parameters.<br /><br />
+        For detecting collision, I manually define the rectangles as obstacles
+        with diagonal coordinates. So, when the player is moving, the game will
+        calculate whether players rectangle is about to intersect with the
+        obstacle rectangles according to the moving direction. As an example,
+        the obstacle rectangles in the first scene, home, is shown as red
+        rectangles below.<br /><br />
+        <image
+          src="https://cdn.glitch.com/fbc2a06c-a0ad-427a-ae11-00252e4e8f39%2Fobstacles-home.png?v=1608499752631"
+        >
+        </image>
+      </p>
     </div>
   </body>
 </html>
